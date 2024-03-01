@@ -1,0 +1,36 @@
+[gd_scene load_steps=8 format=3 uid="uid://b05enedn8v5g"]
+
+[ext_resource type="Script" path="res://basic_template/shadow_viewport/nodes_handler/nodes_hanlder.gd" id="1_4nr0o"]
+[ext_resource type="Script" path="res://basic_template/shadow_viewport/nodes_handler/layer_handler.gd" id="2_0cjys"]
+[ext_resource type="Script" path="res://basic_template/shadow_viewport/nodes_handler/light_source_handler.gd" id="3_sddpn"]
+[ext_resource type="Script" path="res://basic_template/shadow_viewport/nodes_handler/movable_item_handler.gd" id="4_rvwc7"]
+[ext_resource type="Script" path="res://basic_template/shadow_viewport/nodes_handler/shadow_layer_handler.gd" id="5_0121c"]
+[ext_resource type="Script" path="res://basic_template/shadow_viewport/nodes_handler/generic_handler.gd" id="6_2sup6"]
+[ext_resource type="Script" path="res://basic_template/shadow_viewport/nodes_handler/ignore_handler.gd" id="7_ulffy"]
+
+[node name="nodes_hanlder" type="Node" node_paths=PackedStringArray("layer_handler", "light_source_handler", "movabel_item_handler", "shadow_layer_handler", "generic_handler", "ignore_handler")]
+script = ExtResource("1_4nr0o")
+layer_handler = NodePath("layer")
+light_source_handler = NodePath("light_source")
+movabel_item_handler = NodePath("movable_item")
+shadow_layer_handler = NodePath("shadow_layer")
+generic_handler = NodePath("generic")
+ignore_handler = NodePath("ignore")
+
+[node name="layer" type="Node" parent="."]
+script = ExtResource("2_0cjys")
+
+[node name="light_source" type="Node" parent="."]
+script = ExtResource("3_sddpn")
+
+[node name="movable_item" type="Node" parent="."]
+script = ExtResource("4_rvwc7")
+
+[node name="shadow_layer" type="Node" parent="."]
+script = ExtResource("5_0121c")
+
+[node name="generic" type="Node" parent="."]
+script = ExtResource("6_2sup6")
+
+[node name="ignore" type="Node" parent="."]
+script = ExtResource("7_ulffy")

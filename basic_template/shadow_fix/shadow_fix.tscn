@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://fq3jxur8jrco"]
+
+[ext_resource type="Script" path="res://basic_template/shadow_fix/shadow_fix.gd" id="1"]
+[ext_resource type="Material" uid="uid://dy3d3cfjc6bqc" path="res://basic_template/shadow/shadow_material.tres" id="2_x4x8x"]
+
+[node name="shadow_fix" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1")
+
+[node name="texture_rect" type="TextureRect" parent="."]
+material = ExtResource("2_x4x8x")
+layout_mode = 1
+expand_mode = 1

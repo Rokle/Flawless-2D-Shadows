@@ -1,0 +1,17 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://dy3d3cfjc6bqc"]
+
+[sub_resource type="Shader" id="3"]
+code = "shader_type canvas_item;
+
+uniform sampler2D screen_texture: hint_screen_texture, filter_linear_mipmap;
+
+void fragment() {
+	vec3 c = texture(screen_texture, SCREEN_UV, 0.0).rgb;
+	float a = texture(TEXTURE, UV).a;
+	
+	COLOR.rgb = c;
+	COLOR.a = float(int(a+0.5));
+}"
+
+[resource]
+shader = SubResource("3")

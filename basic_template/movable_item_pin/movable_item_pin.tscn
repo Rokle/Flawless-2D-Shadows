@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cmuku3loeiy70"]
+
+[ext_resource type="Script" path="res://basic_template/movable_item_pin/movable_item_pin.gd" id="1_j1pyr"]
+
+[node name="movable_item_pin" type="Marker2D"]
+script = ExtResource("1_j1pyr")

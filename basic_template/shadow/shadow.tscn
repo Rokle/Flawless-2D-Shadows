@@ -1,0 +1,22 @@
+[gd_scene load_steps=2 format=3 uid="uid://cfxcwrko4sirp"]
+
+[ext_resource type="Script" path="res://basic_template/shadow/shadow.gd" id="1_4y8mm"]
+
+[node name="shadow" type="TextureRect" node_paths=PackedStringArray("animated_sprite", "label")]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+expand_mode = 1
+script = ExtResource("1_4y8mm")
+animated_sprite = NodePath("animated_sprite_2d")
+label = NodePath("label")
+
+[node name="animated_sprite_2d" type="AnimatedSprite2D" parent="."]
+
+[node name="label" type="Label" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0

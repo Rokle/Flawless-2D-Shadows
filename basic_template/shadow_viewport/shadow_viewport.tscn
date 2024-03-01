@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://bxvbect8gpiyn"]
+
+[ext_resource type="Script" path="res://basic_template/shadow_viewport/shadow_viewport.gd" id="1"]
+[ext_resource type="Material" uid="uid://dy3d3cfjc6bqc" path="res://basic_template/shadow/shadow_material.tres" id="1_7uy56"]
+[ext_resource type="PackedScene" uid="uid://b05enedn8v5g" path="res://basic_template/shadow_viewport/nodes_handler/nodes_hanlder.tscn" id="2_5813i"]
+
+[node name="shadow_viewport" type="Control" node_paths=PackedStringArray("nodes_handler")]
+material = ExtResource("1_7uy56")
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1")
+nodes_handler = NodePath("nodes_hanlder")
+
+[node name="nodes_hanlder" parent="." node_paths=PackedStringArray("shadow_viewport") instance=ExtResource("2_5813i")]
+shadow_viewport = NodePath("..")
+
+[node name="start_timer" type="Timer" parent="."]
+wait_time = 0.1
+one_shot = true
+autostart = true
+
+[connection signal="timeout" from="start_timer" to="." method="_on_StartTimer_timeout"]

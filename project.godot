@@ -11,5 +11,26 @@ config_version=5
 [application]
 
 config/name="Flawless 2D Shadows"
-config/features=PackedStringArray("4.1", "Forward Plus")
+run/main_scene="res://demo/shadows_demo.tscn"
+config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+InteractionsManager="*res://basic_template/interactions_manager.gd"
+
+[display]
+
+window/stretch/mode="viewport"
+
+[editor]
+
+naming/node_name_casing=2
+
+[input]
+
+left_click={
+"deadzone": 0.5,
+"events": [Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"button_mask":0,"position":Vector2(0, 0),"global_position":Vector2(0, 0),"factor":1.0,"button_index":1,"canceled":false,"pressed":false,"double_click":false,"script":null)
+]
+}

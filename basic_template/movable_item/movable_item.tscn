@@ -1,0 +1,21 @@
+[gd_scene load_steps=2 format=3 uid="uid://c34tmtv6gi7uy"]
+
+[ext_resource type="Script" path="res://basic_template/movable_item/movable_item.gd" id="1_hyaql"]
+
+[node name="movable_item" type="TextureButton" groups=["Save"]]
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("1_hyaql")
+
+[node name="interation_rect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[connection signal="button_down" from="." to="." method="_on_MovableItem_button_down"]
+[connection signal="button_up" from="." to="." method="_on_MovableItem_button_up"]
+[connection signal="mouse_entered" from="." to="." method="_on_MovableItem_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_MovableItem_mouse_exited"]

@@ -1,0 +1,1581 @@
+[gd_scene load_steps=361 format=3 uid="uid://0srndrvmj5gr"]
+
+[ext_resource type="Texture2D" uid="uid://bsfmsrmbj1kiv" path="res://demo/art_assets/background.png" id="1_eanlu"]
+[ext_resource type="PackedScene" uid="uid://bxvbect8gpiyn" path="res://basic_template/shadow_viewport/shadow_viewport.tscn" id="2_4jsus"]
+[ext_resource type="PackedScene" uid="uid://c34tmtv6gi7uy" path="res://basic_template/movable_item/movable_item.tscn" id="2_s5woq"]
+[ext_resource type="PackedScene" uid="uid://fq3jxur8jrco" path="res://basic_template/shadow_fix/shadow_fix.tscn" id="3_e8x3b"]
+[ext_resource type="Texture2D" uid="uid://cajibb848l08d" path="res://demo/art_assets/writing.png" id="3_hkonc"]
+[ext_resource type="PackedScene" uid="uid://n3mhbn005hgu" path="res://basic_template/shadow_layer/shadow_layer.tscn" id="3_lnllj"]
+[ext_resource type="PackedScene" uid="uid://ce51o1irp4u0t" path="res://basic_template/light_source/light_source.tscn" id="6_e73g7"]
+[ext_resource type="Texture2D" uid="uid://bv0c2bjxo47la" path="res://demo/art_assets/tf2-team-fortress2.png" id="7_hcxuf"]
+[ext_resource type="Texture2D" uid="uid://ce4wuyowfsmgy" path="res://demo/art_assets/tf2-team-fortress3.png" id="8_cafxj"]
+[ext_resource type="Script" path="res://basic_template/shadow_viewport/shadow_viewport_ignore.gd" id="8_jiqvg"]
+[ext_resource type="Texture2D" uid="uid://b8ye6k87xfs2d" path="res://demo/art_assets/tf2-team-fortress4.png" id="9_qwtm3"]
+[ext_resource type="Texture2D" uid="uid://ci645kdxhfb7x" path="res://demo/art_assets/tf2-team-fortress5.png" id="10_8t4nw"]
+[ext_resource type="Texture2D" uid="uid://dp602qn5ngqnc" path="res://demo/art_assets/tf2-team-fortress6.png" id="11_ji1t8"]
+[ext_resource type="Texture2D" uid="uid://bfqt2paw2cwqp" path="res://demo/art_assets/tf2-team-fortress7.png" id="12_01q5a"]
+[ext_resource type="Texture2D" uid="uid://cf52swjx4m02r" path="res://demo/art_assets/tf2-team-fortress8.png" id="13_0g38i"]
+[ext_resource type="Texture2D" uid="uid://cvdx2pl3hgl3l" path="res://demo/art_assets/tf2-team-fortress9.png" id="14_p8ytl"]
+[ext_resource type="Texture2D" uid="uid://x6unxg178iak" path="res://demo/art_assets/tf2-team-fortress10.png" id="15_loww5"]
+[ext_resource type="Texture2D" uid="uid://cxukpj6hxr457" path="res://demo/art_assets/tf2-team-fortress11.png" id="16_bl08i"]
+[ext_resource type="Texture2D" uid="uid://dbel288nhl8fp" path="res://demo/art_assets/tf2-team-fortress12.png" id="17_123es"]
+[ext_resource type="Texture2D" uid="uid://6jmc7ycs603w" path="res://demo/art_assets/tf2-team-fortress13.png" id="18_lf82w"]
+[ext_resource type="Texture2D" uid="uid://dtwqnmuum4g02" path="res://demo/art_assets/tf2-team-fortress14.png" id="19_pckpp"]
+[ext_resource type="Texture2D" uid="uid://ysm4dwnksfqd" path="res://demo/art_assets/tf2-team-fortress15.png" id="20_mnnyp"]
+[ext_resource type="Texture2D" uid="uid://clyk3ei6yq5sv" path="res://demo/art_assets/tf2-team-fortress16.png" id="21_8wygt"]
+[ext_resource type="Texture2D" uid="uid://drypeedbpoirg" path="res://demo/art_assets/tf2-team-fortress17.png" id="22_o2occ"]
+[ext_resource type="Texture2D" uid="uid://b4d8xyrqfcnsq" path="res://demo/art_assets/tf2-team-fortress18.png" id="23_a420h"]
+[ext_resource type="Texture2D" uid="uid://dtmjoi0kbc6v7" path="res://demo/art_assets/tf2-team-fortress19.png" id="24_6l4ut"]
+[ext_resource type="Texture2D" uid="uid://op31fmx2c5dy" path="res://demo/art_assets/tf2-team-fortress20.png" id="25_q8au1"]
+[ext_resource type="Texture2D" uid="uid://c6lux0d72peg7" path="res://demo/art_assets/tf2-team-fortress21.png" id="26_eafcd"]
+[ext_resource type="Texture2D" uid="uid://fx0f2ycu4jx7" path="res://demo/art_assets/tf2-team-fortress22.png" id="27_vh3cl"]
+[ext_resource type="Texture2D" uid="uid://c4trd6wbjfcc" path="res://demo/art_assets/tf2-team-fortress23.png" id="28_n7jc6"]
+[ext_resource type="Texture2D" uid="uid://62qh64wm5xid" path="res://demo/art_assets/tf2-team-fortress24.png" id="29_gp1ua"]
+[ext_resource type="Texture2D" uid="uid://bjr6yls3fhaws" path="res://demo/art_assets/tf2-team-fortress25.png" id="30_na6wo"]
+[ext_resource type="Texture2D" uid="uid://bwk3er4ay7lu3" path="res://demo/art_assets/tf2-team-fortress26.png" id="31_b8jpy"]
+[ext_resource type="Texture2D" uid="uid://bm7sbd5rsrqmb" path="res://demo/art_assets/tf2-team-fortress27.png" id="32_xasud"]
+[ext_resource type="Texture2D" uid="uid://bjgvj6pvriagv" path="res://demo/art_assets/tf2-team-fortress28.png" id="33_4fomr"]
+[ext_resource type="Texture2D" uid="uid://g80le7ssk1km" path="res://demo/art_assets/tf2-team-fortress29.png" id="34_qs4c0"]
+[ext_resource type="Texture2D" uid="uid://3ccra02louls" path="res://demo/art_assets/tf2-team-fortress30.png" id="35_ncg8y"]
+[ext_resource type="Texture2D" uid="uid://brjq2okmx08ha" path="res://demo/art_assets/tf2-team-fortress31.png" id="36_cyutd"]
+[ext_resource type="Texture2D" uid="uid://j7m1ud2kwdd4" path="res://demo/art_assets/tf2-team-fortress32.png" id="37_wm0g3"]
+[ext_resource type="Texture2D" uid="uid://e6pk28oo6ovf" path="res://demo/art_assets/tf2-team-fortress33.png" id="38_ghlw0"]
+[ext_resource type="Texture2D" uid="uid://bpigq8oifusbi" path="res://demo/art_assets/tf2-team-fortress34.png" id="39_evhsc"]
+[ext_resource type="Texture2D" uid="uid://bpdno8gesqeu5" path="res://demo/art_assets/tf2-team-fortress35.png" id="40_7i8f4"]
+[ext_resource type="Texture2D" uid="uid://byqqesevqrpmk" path="res://demo/art_assets/tf2-team-fortress36.png" id="41_m3t3i"]
+[ext_resource type="Texture2D" uid="uid://bjksbpdypjofy" path="res://demo/art_assets/tf2-team-fortress37.png" id="42_m7kk3"]
+[ext_resource type="Texture2D" uid="uid://befxb7ih3mow6" path="res://demo/art_assets/tf2-team-fortress38.png" id="43_wl6ti"]
+[ext_resource type="Texture2D" uid="uid://csfwj156es63u" path="res://demo/art_assets/tf2-team-fortress39.png" id="44_u5ijd"]
+[ext_resource type="Texture2D" uid="uid://b2ge0bukqb4o1" path="res://demo/art_assets/tf2-team-fortress40.png" id="45_j7wyt"]
+[ext_resource type="Texture2D" uid="uid://c68aen4dket41" path="res://demo/art_assets/tf2-team-fortress41.png" id="46_f4ufd"]
+[ext_resource type="Texture2D" uid="uid://c7yj2aqwkudbi" path="res://demo/art_assets/tf2-team-fortress42.png" id="47_y4r26"]
+[ext_resource type="Texture2D" uid="uid://du3hpyg2tw0kc" path="res://demo/art_assets/tf2-team-fortress43.png" id="48_e40ut"]
+[ext_resource type="Texture2D" uid="uid://bv53dvu3d8fog" path="res://demo/art_assets/tf2-team-fortress44.png" id="49_5jckf"]
+[ext_resource type="Texture2D" uid="uid://dlaj5vih4lfvh" path="res://demo/art_assets/tf2-team-fortress45.png" id="50_w05s1"]
+[ext_resource type="Texture2D" uid="uid://cpa7l1o3ssxh2" path="res://demo/art_assets/tf2-team-fortress46.png" id="51_ogrrn"]
+[ext_resource type="Texture2D" uid="uid://c7tq04qj41ixy" path="res://demo/art_assets/tf2-team-fortress47.png" id="52_ldvug"]
+[ext_resource type="Texture2D" uid="uid://c8m14hxaukyha" path="res://demo/art_assets/tf2-team-fortress48.png" id="53_6hhe2"]
+[ext_resource type="Texture2D" uid="uid://r1jte8f50801" path="res://demo/art_assets/tf2-team-fortress49.png" id="54_13c1l"]
+[ext_resource type="Texture2D" uid="uid://sep1bmh2xkl5" path="res://demo/art_assets/tf2-team-fortress50.png" id="55_o31b8"]
+[ext_resource type="Texture2D" uid="uid://e63yo6pu8jqh" path="res://demo/art_assets/tf2-team-fortress51.png" id="56_k2kih"]
+[ext_resource type="Texture2D" uid="uid://iw8k40xwqli1" path="res://demo/art_assets/tf2-team-fortress52.png" id="57_0ltl3"]
+[ext_resource type="Texture2D" uid="uid://bjswxa4wgo7ib" path="res://demo/art_assets/tf2-team-fortress53.png" id="58_uyrnn"]
+[ext_resource type="Texture2D" uid="uid://b4qnt2jstawrx" path="res://demo/art_assets/tf2-team-fortress54.png" id="59_rtkui"]
+[ext_resource type="Texture2D" uid="uid://bjoyf8iq2ybpb" path="res://demo/art_assets/tf2-team-fortress55.png" id="60_mghs0"]
+[ext_resource type="Texture2D" uid="uid://dqddwfm3vcq05" path="res://demo/art_assets/tf2-team-fortress56.png" id="61_avats"]
+[ext_resource type="Texture2D" uid="uid://uem25tfsx2x0" path="res://demo/art_assets/tf2-team-fortress57.png" id="62_0dyrd"]
+[ext_resource type="Texture2D" uid="uid://cqclgopwctfe3" path="res://demo/art_assets/tf2-team-fortress58.png" id="63_8s6d6"]
+[ext_resource type="Texture2D" uid="uid://bnckitab8jk1p" path="res://demo/art_assets/tf2-team-fortress59.png" id="64_l0lgw"]
+[ext_resource type="Texture2D" uid="uid://b0x5bx7cxy56l" path="res://demo/art_assets/tf2-team-fortress60.png" id="65_5n1t5"]
+[ext_resource type="Texture2D" uid="uid://cbuduwhyh6jtb" path="res://demo/art_assets/tf2-team-fortress61.png" id="66_dcjl7"]
+[ext_resource type="Texture2D" uid="uid://bb2k8ckp6dt2k" path="res://demo/art_assets/tf2-team-fortress62.png" id="67_n75pg"]
+[ext_resource type="Texture2D" uid="uid://xunyr6qf0fy5" path="res://demo/art_assets/tf2-team-fortress63.png" id="68_jl5dh"]
+[ext_resource type="Texture2D" uid="uid://baudweki63mty" path="res://demo/art_assets/tf2-team-fortress64.png" id="69_smujc"]
+[ext_resource type="Texture2D" uid="uid://cx45rw352cjrj" path="res://demo/art_assets/tf2-team-fortress65.png" id="70_fyuin"]
+[ext_resource type="Texture2D" uid="uid://deqofk6whlr67" path="res://demo/art_assets/tf2-team-fortress66.png" id="71_ef0e4"]
+[ext_resource type="Texture2D" uid="uid://ets4suf78k1t" path="res://demo/art_assets/tf2-team-fortress67.png" id="72_lirjh"]
+[ext_resource type="Texture2D" uid="uid://1j6a3rprydbx" path="res://demo/art_assets/tf2-team-fortress68.png" id="73_sk15y"]
+[ext_resource type="Texture2D" uid="uid://bq0k4xyyc55o1" path="res://demo/art_assets/tf2-team-fortress69.png" id="74_3c0ad"]
+[ext_resource type="Texture2D" uid="uid://dk87oly2wotgc" path="res://demo/art_assets/tf2-team-fortress70.png" id="75_3ejvo"]
+[ext_resource type="Texture2D" uid="uid://jviyt5t8kxeo" path="res://demo/art_assets/tf2-team-fortress71.png" id="76_xygds"]
+[ext_resource type="Texture2D" uid="uid://h2x745u7wimy" path="res://demo/art_assets/tf2-team-fortress72.png" id="77_q7hnl"]
+[ext_resource type="Texture2D" uid="uid://cnmorhpxodakg" path="res://demo/art_assets/tf2-team-fortress73.png" id="78_tlt2k"]
+[ext_resource type="Texture2D" uid="uid://ddl3murlf1djj" path="res://demo/art_assets/tf2-team-fortress74.png" id="79_yibjv"]
+[ext_resource type="Texture2D" uid="uid://dlmtv24ogoe1d" path="res://demo/art_assets/tf2-team-fortress75.png" id="80_013sh"]
+[ext_resource type="Texture2D" uid="uid://br7d3lqw3hm8e" path="res://demo/art_assets/tf2-team-fortress76.png" id="81_guolw"]
+[ext_resource type="Texture2D" uid="uid://bvsdqlmtwcb03" path="res://demo/art_assets/tf2-team-fortress77.png" id="82_2hk6k"]
+[ext_resource type="Texture2D" uid="uid://dvmpdbuargc5o" path="res://demo/art_assets/tf2-team-fortress78.png" id="83_8go51"]
+[ext_resource type="Texture2D" uid="uid://b1nmequd5km7g" path="res://demo/art_assets/tf2-team-fortress79.png" id="84_qtwfk"]
+[ext_resource type="Texture2D" uid="uid://ppwoflwlase4" path="res://demo/art_assets/tf2-team-fortress80.png" id="85_th7ky"]
+[ext_resource type="Texture2D" uid="uid://dajf0basgg2km" path="res://demo/art_assets/tf2-team-fortress81.png" id="86_qios4"]
+[ext_resource type="Texture2D" uid="uid://dvu7p3tjl8o2p" path="res://demo/art_assets/tf2-team-fortress82.png" id="87_ihjsr"]
+[ext_resource type="Texture2D" uid="uid://l07wuahw6rp7" path="res://demo/art_assets/tf2-team-fortress83.png" id="88_5fdnx"]
+[ext_resource type="Texture2D" uid="uid://cv75p6nape030" path="res://demo/art_assets/tf2-team-fortress84.png" id="89_jxyis"]
+[ext_resource type="Texture2D" uid="uid://dfykhs61glhe6" path="res://demo/art_assets/tf2-team-fortress85.png" id="90_pny3g"]
+[ext_resource type="Texture2D" uid="uid://b8qu6qan48dcg" path="res://demo/art_assets/tf2-team-fortress86.png" id="91_bejp2"]
+[ext_resource type="Texture2D" uid="uid://di8xa6o3v5t6j" path="res://demo/art_assets/tf2-team-fortress87.png" id="92_1v3jn"]
+[ext_resource type="Texture2D" uid="uid://cj7jpxepu1aa4" path="res://demo/art_assets/tf2-team-fortress88.png" id="93_kppah"]
+[ext_resource type="Texture2D" uid="uid://cekpmrtrcwovv" path="res://demo/art_assets/tf2-team-fortress89.png" id="94_03qcf"]
+[ext_resource type="Texture2D" uid="uid://bysv0vy1ovuxn" path="res://demo/art_assets/tf2-team-fortress90.png" id="95_del7f"]
+[ext_resource type="Texture2D" uid="uid://cgm1csi1oxmd1" path="res://demo/art_assets/tf2-team-fortress91.png" id="96_8ajqr"]
+[ext_resource type="Texture2D" uid="uid://cx58cpcgyoooe" path="res://demo/art_assets/tf2-team-fortress92.png" id="97_g67xl"]
+[ext_resource type="Texture2D" uid="uid://5v47grvbp0sa" path="res://demo/art_assets/tf2-team-fortress93.png" id="98_4cpxn"]
+[ext_resource type="Texture2D" uid="uid://cpbtpgu77xovx" path="res://demo/art_assets/tf2-team-fortress94.png" id="99_atdd3"]
+[ext_resource type="Texture2D" uid="uid://ce6je63wt2e3l" path="res://demo/art_assets/tf2-team-fortress95.png" id="100_hrucr"]
+[ext_resource type="Texture2D" uid="uid://du75lbiltdl4s" path="res://demo/art_assets/tf2-team-fortress96.png" id="101_dflq6"]
+[ext_resource type="Texture2D" uid="uid://6rwbew1vwo0m" path="res://demo/art_assets/tf2-team-fortress97.png" id="102_ly04v"]
+[ext_resource type="Texture2D" uid="uid://hh7w1idaw13x" path="res://demo/art_assets/tf2-team-fortress98.png" id="103_tqk6l"]
+[ext_resource type="Texture2D" uid="uid://g6begsvm7cf0" path="res://demo/art_assets/tf2-team-fortress99.png" id="104_abcva"]
+[ext_resource type="Texture2D" uid="uid://v06bk5k6qqri" path="res://demo/art_assets/tf2-team-fortress100.png" id="105_6gfds"]
+[ext_resource type="Texture2D" uid="uid://b0cymfxfwdrqf" path="res://demo/art_assets/tf2-team-fortress101.png" id="106_ykij6"]
+[ext_resource type="Texture2D" uid="uid://c1kd11l7e7e28" path="res://demo/art_assets/tf2-team-fortress102.png" id="107_kgn7i"]
+[ext_resource type="Texture2D" uid="uid://o4vd82ur1fu5" path="res://demo/art_assets/tf2-team-fortress103.png" id="108_cyvwa"]
+[ext_resource type="Texture2D" uid="uid://dlo87siuf0yd8" path="res://demo/art_assets/tf2-team-fortress104.png" id="109_iuxsi"]
+[ext_resource type="Texture2D" uid="uid://dsxhk7c750kyr" path="res://demo/art_assets/tf2-team-fortress105.png" id="110_b5chb"]
+[ext_resource type="Texture2D" uid="uid://rjlw1y84i1ko" path="res://demo/art_assets/tf2-team-fortress106.png" id="111_a0np4"]
+[ext_resource type="Texture2D" uid="uid://ce8kdjx4x17my" path="res://demo/art_assets/tf2-team-fortress107.png" id="112_abnll"]
+[ext_resource type="Texture2D" uid="uid://cdvwqsnbjlsgr" path="res://demo/art_assets/tf2-team-fortress108.png" id="113_anlbf"]
+[ext_resource type="Texture2D" uid="uid://dccu0j73ffrlh" path="res://demo/art_assets/tf2-team-fortress109.png" id="114_yyu81"]
+[ext_resource type="Texture2D" uid="uid://dgsnfk7py75s5" path="res://demo/art_assets/tf2-team-fortress110.png" id="115_qtv64"]
+[ext_resource type="Texture2D" uid="uid://dvh2unx2g0t5c" path="res://demo/art_assets/tf2-team-fortress111.png" id="116_q8v6s"]
+[ext_resource type="Texture2D" uid="uid://b20dmku1ckm1c" path="res://demo/art_assets/tf2-team-fortress112.png" id="117_oshgv"]
+[ext_resource type="Texture2D" uid="uid://cvmr2h8mvnstn" path="res://demo/art_assets/tf2-team-fortress113.png" id="118_23muo"]
+[ext_resource type="Texture2D" uid="uid://cdpvacwojr16l" path="res://demo/art_assets/tf2-team-fortress114.png" id="119_daowm"]
+[ext_resource type="Texture2D" uid="uid://dfi4shx13l7m5" path="res://demo/art_assets/tf2-team-fortress115.png" id="120_yoaqw"]
+[ext_resource type="Texture2D" uid="uid://dgoctv406tpvn" path="res://demo/art_assets/tf2-team-fortress116.png" id="121_vbf1j"]
+[ext_resource type="Texture2D" uid="uid://qynjl7pdk4n8" path="res://demo/art_assets/tf2-team-fortress117.png" id="122_6yorf"]
+[ext_resource type="Texture2D" uid="uid://reolgcrfr6y0" path="res://demo/art_assets/tf2-team-fortress118.png" id="123_1jwao"]
+[ext_resource type="Texture2D" uid="uid://1mynn3rwnnkk" path="res://demo/art_assets/tf2-team-fortress119.png" id="124_j8amf"]
+[ext_resource type="Texture2D" uid="uid://duekfaur8vysr" path="res://demo/art_assets/tf2-team-fortress120.png" id="125_hg22m"]
+[ext_resource type="Texture2D" uid="uid://dpg8y244yus2x" path="res://demo/art_assets/tf2-team-fortress121.png" id="126_x2087"]
+[ext_resource type="Texture2D" uid="uid://c07qsx7l4einr" path="res://demo/art_assets/tf2-team-fortress122.png" id="127_qdumr"]
+[ext_resource type="Texture2D" uid="uid://bylr7vsbqcfs2" path="res://demo/art_assets/tf2-team-fortress123.png" id="128_d3r6l"]
+[ext_resource type="Texture2D" uid="uid://nsxpfej8ddy4" path="res://demo/art_assets/tf2-team-fortress124.png" id="129_8q2ks"]
+[ext_resource type="Texture2D" uid="uid://bdwc3tp0lc85k" path="res://demo/art_assets/tf2-team-fortress125.png" id="130_wdbyr"]
+[ext_resource type="Texture2D" uid="uid://j8s0notuhu1m" path="res://demo/art_assets/tf2-team-fortress126.png" id="131_1u2nf"]
+[ext_resource type="Texture2D" uid="uid://dp21rato5mo3e" path="res://demo/art_assets/tf2-team-fortress127.png" id="132_dry6b"]
+[ext_resource type="Texture2D" uid="uid://2udx1sth83bq" path="res://demo/art_assets/tf2-team-fortress128.png" id="133_tvvvk"]
+[ext_resource type="Texture2D" uid="uid://b86vyhqa7seih" path="res://demo/art_assets/tf2-team-fortress129.png" id="134_dw62m"]
+[ext_resource type="Texture2D" uid="uid://c8hkqoi24ks2t" path="res://demo/art_assets/tf2-team-fortress130.png" id="135_de1lr"]
+[ext_resource type="Texture2D" uid="uid://77jngyilmmss" path="res://demo/art_assets/tf2-team-fortress131.png" id="136_7tgws"]
+[ext_resource type="Texture2D" uid="uid://dyt218genby7j" path="res://demo/art_assets/tf2-team-fortress132.png" id="137_mvi67"]
+[ext_resource type="Texture2D" uid="uid://bm3828xrjnhla" path="res://demo/art_assets/tf2-team-fortress133.png" id="138_id86f"]
+[ext_resource type="Texture2D" uid="uid://d1fafa102nigs" path="res://demo/art_assets/tf2-team-fortress134.png" id="139_ux47k"]
+[ext_resource type="Texture2D" uid="uid://11o1675nxcj1" path="res://demo/art_assets/tf2-team-fortress135.png" id="140_rtp3j"]
+[ext_resource type="Texture2D" uid="uid://byxw0vkbh5kv5" path="res://demo/art_assets/tf2-team-fortress136.png" id="141_kckxl"]
+[ext_resource type="Texture2D" uid="uid://cn31t1u0hnck5" path="res://demo/art_assets/tf2-team-fortress137.png" id="142_o8vll"]
+[ext_resource type="Texture2D" uid="uid://2lsekj2bltea" path="res://demo/art_assets/tf2-team-fortress138.png" id="143_fobku"]
+[ext_resource type="Texture2D" uid="uid://cxrcsli31k7uk" path="res://demo/art_assets/tf2-team-fortress139.png" id="144_iw37n"]
+[ext_resource type="Texture2D" uid="uid://tmj1xdfyqnxy" path="res://demo/art_assets/tf2-team-fortress140.png" id="145_pt5cj"]
+[ext_resource type="Texture2D" uid="uid://cjsdvcsijxx38" path="res://demo/art_assets/tf2-team-fortress141.png" id="146_87d5s"]
+[ext_resource type="Texture2D" uid="uid://nrrbarc8kod7" path="res://demo/art_assets/tf2-team-fortress142.png" id="147_hf0vo"]
+[ext_resource type="Texture2D" uid="uid://cfl0irngooyyw" path="res://demo/art_assets/tf2-team-fortress143.png" id="148_2x3xn"]
+[ext_resource type="Texture2D" uid="uid://bwpmd5d8ptsby" path="res://demo/art_assets/tf2-team-fortress144.png" id="149_o5xb1"]
+[ext_resource type="Texture2D" uid="uid://ds26ecci0tf35" path="res://demo/art_assets/tf2-team-fortress145.png" id="150_tdp1u"]
+[ext_resource type="Texture2D" uid="uid://5ioofavfhfk4" path="res://demo/art_assets/tf2-team-fortress146.png" id="151_5oa0n"]
+[ext_resource type="Texture2D" uid="uid://cwikbd4a0wa1c" path="res://demo/art_assets/tf2-team-fortress147.png" id="152_rqwn1"]
+[ext_resource type="Texture2D" uid="uid://0sbh18b0mxhe" path="res://demo/art_assets/tf2-team-fortress148.png" id="153_eci17"]
+[ext_resource type="Texture2D" uid="uid://bb8p3xsr2184w" path="res://demo/art_assets/tf2-team-fortress149.png" id="154_xoqiv"]
+[ext_resource type="Texture2D" uid="uid://bufbwye2wlwdu" path="res://demo/art_assets/tf2-team-fortress150.png" id="155_sfvdn"]
+[ext_resource type="Texture2D" uid="uid://cxcq2dlhbknnh" path="res://demo/art_assets/tf2-team-fortress151.png" id="156_mluo1"]
+[ext_resource type="Texture2D" uid="uid://yvf3kpjogmsg" path="res://demo/art_assets/tf2-team-fortress152.png" id="157_cwx6p"]
+[ext_resource type="Texture2D" uid="uid://fav4pnuw0gid" path="res://demo/art_assets/tf2-team-fortress153.png" id="158_dgjfr"]
+[ext_resource type="Texture2D" uid="uid://dalnomuggkn5i" path="res://demo/art_assets/tf2-team-fortress154.png" id="159_glsib"]
+[ext_resource type="Texture2D" uid="uid://cbt0bnr3wot4j" path="res://demo/art_assets/tf2-team-fortress155.png" id="160_y7hjy"]
+[ext_resource type="Texture2D" uid="uid://bo83jn47hwfeh" path="res://demo/art_assets/tf2-team-fortress156.png" id="161_lgxr4"]
+[ext_resource type="Texture2D" uid="uid://c5w3820sgtymi" path="res://demo/art_assets/tf2-team-fortress157.png" id="162_vyxla"]
+[ext_resource type="Texture2D" uid="uid://cs5vuqcyn0jmk" path="res://demo/art_assets/tf2-team-fortress158.png" id="163_xyvhp"]
+[ext_resource type="Texture2D" uid="uid://dslx62ijprcyf" path="res://demo/art_assets/tf2-team-fortress159.png" id="164_aknam"]
+[ext_resource type="Texture2D" uid="uid://bepicjbk3g82v" path="res://demo/art_assets/tf2-team-fortress160.png" id="165_1dgju"]
+[ext_resource type="Texture2D" uid="uid://b7e6lbrmb80va" path="res://demo/art_assets/tf2-team-fortress161.png" id="166_18ml7"]
+[ext_resource type="Texture2D" uid="uid://c2ff6jrtmads7" path="res://demo/art_assets/tf2-team-fortress162.png" id="167_hgc74"]
+[ext_resource type="Texture2D" uid="uid://m12dvtjol82t" path="res://demo/art_assets/tf2-team-fortress163.png" id="168_ujoqn"]
+[ext_resource type="Texture2D" uid="uid://dbr5a2moeoexb" path="res://demo/art_assets/tf2-team-fortress164.png" id="169_lg8s1"]
+[ext_resource type="Texture2D" uid="uid://y7lqn82ipnyw" path="res://demo/art_assets/tf2-team-fortress165.png" id="170_340gp"]
+[ext_resource type="Texture2D" uid="uid://dv1ynbol6yx0" path="res://demo/art_assets/tf2-team-fortress166.png" id="171_aldmg"]
+[ext_resource type="Texture2D" uid="uid://chf7foyc8e4lb" path="res://demo/art_assets/tf2-team-fortress167.png" id="172_c6jhr"]
+[ext_resource type="Texture2D" uid="uid://c3dn4lsh4byu8" path="res://demo/art_assets/tf2-team-fortress168.png" id="173_a8tf0"]
+[ext_resource type="Texture2D" uid="uid://ckqeitgto7gvq" path="res://demo/art_assets/tf2-team-fortress169.png" id="174_dko4g"]
+[ext_resource type="Texture2D" uid="uid://bc53r0lqdcdfx" path="res://demo/art_assets/tf2-team-fortress170.png" id="175_a2fqs"]
+[ext_resource type="Texture2D" uid="uid://br3qip0od77vn" path="res://demo/art_assets/tf2-team-fortress171.png" id="176_vcpug"]
+[ext_resource type="Texture2D" uid="uid://cw6icoxptwd1y" path="res://demo/art_assets/tf2-team-fortress172.png" id="177_grp7x"]
+[ext_resource type="Texture2D" uid="uid://c0stmgw6gcyfc" path="res://demo/art_assets/tf2-team-fortress173.png" id="178_xmfit"]
+[ext_resource type="Texture2D" uid="uid://cyp2tvgqyla07" path="res://demo/art_assets/tf2-team-fortress174.png" id="179_nofx0"]
+[ext_resource type="Texture2D" uid="uid://bml0snine8vwc" path="res://demo/art_assets/tf2-team-fortress175.png" id="180_lhq00"]
+[ext_resource type="Texture2D" uid="uid://byoxp8ictotd6" path="res://demo/art_assets/tf2-team-fortress176.png" id="181_y3kmr"]
+[ext_resource type="Texture2D" uid="uid://dybu0x3ic3c78" path="res://demo/art_assets/tf2-team-fortress177.png" id="182_oruc0"]
+[ext_resource type="Texture2D" uid="uid://bsc0ae8ltmn7s" path="res://demo/art_assets/tf2-team-fortress178.png" id="183_8ydgu"]
+[ext_resource type="Texture2D" uid="uid://c8ypwhiyprayp" path="res://demo/art_assets/tf2-team-fortress179.png" id="184_y8sjx"]
+[ext_resource type="Texture2D" uid="uid://ntkmhltr2o1a" path="res://demo/art_assets/tf2-team-fortress180.png" id="185_1tdpd"]
+[ext_resource type="Texture2D" uid="uid://73ucur26qet6" path="res://demo/art_assets/tf2-team-fortress181.png" id="186_w53nu"]
+[ext_resource type="Texture2D" uid="uid://c2328asfqbps5" path="res://demo/art_assets/tf2-team-fortress182.png" id="187_ni1nv"]
+[ext_resource type="Texture2D" uid="uid://bumgobkyehxng" path="res://demo/art_assets/tf2-team-fortress183.png" id="188_ub7jp"]
+[ext_resource type="Texture2D" uid="uid://bi2captkasw8p" path="res://demo/art_assets/tf2-team-fortress184.png" id="189_lww66"]
+[ext_resource type="Texture2D" uid="uid://bh0bys58rjgpg" path="res://demo/art_assets/tf2-team-fortress185.png" id="190_o0mqw"]
+[ext_resource type="Texture2D" uid="uid://bqy86tnm8ds4v" path="res://demo/art_assets/tf2-team-fortress186.png" id="191_0boeh"]
+[ext_resource type="Texture2D" uid="uid://mrrfdoq23wo8" path="res://demo/art_assets/tf2-team-fortress187.png" id="192_a7xxg"]
+[ext_resource type="Texture2D" uid="uid://cn8y7jwcs10ak" path="res://demo/art_assets/tf2-team-fortress188.png" id="193_ehlhv"]
+[ext_resource type="Texture2D" uid="uid://dytpkoji60mmx" path="res://demo/art_assets/tf2-team-fortress189.png" id="194_xva8r"]
+[ext_resource type="Texture2D" uid="uid://bwwjmsk4of6rl" path="res://demo/art_assets/tf2-team-fortress190.png" id="195_da556"]
+[ext_resource type="Texture2D" uid="uid://cruc6shqvojky" path="res://demo/art_assets/tf2-team-fortress191.png" id="196_l71hk"]
+[ext_resource type="Texture2D" uid="uid://clarnyfw2xx78" path="res://demo/art_assets/tf2-team-fortress192.png" id="197_py1gb"]
+[ext_resource type="Texture2D" uid="uid://dvtrn0dddqr5f" path="res://demo/art_assets/tf2-team-fortress193.png" id="198_hnga6"]
+[ext_resource type="Texture2D" uid="uid://b1nrgkejtw07b" path="res://demo/art_assets/tf2-team-fortress194.png" id="199_uowhf"]
+[ext_resource type="Texture2D" uid="uid://bejnvwqa5cev6" path="res://demo/art_assets/tf2-team-fortress195.png" id="200_2hqjn"]
+[ext_resource type="Texture2D" uid="uid://7fvxw7baat82" path="res://demo/art_assets/tf2-team-fortress196.png" id="201_lgk53"]
+[ext_resource type="Texture2D" uid="uid://dmul53vm522lq" path="res://demo/art_assets/tf2-team-fortress197.png" id="202_ht3oe"]
+[ext_resource type="Texture2D" uid="uid://dsaokwlcpjo1m" path="res://demo/art_assets/tf2-team-fortress198.png" id="203_vk3nx"]
+[ext_resource type="Texture2D" uid="uid://blfv78igu21ve" path="res://demo/art_assets/tf2-team-fortress199.png" id="204_kaoxj"]
+[ext_resource type="Texture2D" uid="uid://dhlwpibhsdbs2" path="res://demo/art_assets/tf2-team-fortress200.png" id="205_am63u"]
+[ext_resource type="Texture2D" uid="uid://dboib20mo04mg" path="res://demo/art_assets/tf2-team-fortress201.png" id="206_2i7lj"]
+[ext_resource type="Texture2D" uid="uid://bbpw31ghkj7x5" path="res://demo/art_assets/tf2-team-fortress202.png" id="207_whb5d"]
+[ext_resource type="Texture2D" uid="uid://84om16eod2nj" path="res://demo/art_assets/tf2-team-fortress203.png" id="208_hl73n"]
+[ext_resource type="Texture2D" uid="uid://clg7rcldo77nt" path="res://demo/art_assets/tf2-team-fortress204.png" id="209_jbulg"]
+[ext_resource type="Texture2D" uid="uid://dy4mbnijouiiq" path="res://demo/art_assets/tf2-team-fortress205.png" id="210_a6dis"]
+[ext_resource type="Texture2D" uid="uid://b8bx4q7dydfrv" path="res://demo/art_assets/tf2-team-fortress206.png" id="211_vkmpg"]
+[ext_resource type="Texture2D" uid="uid://7vufl0ck3fbt" path="res://demo/art_assets/tf2-team-fortress207.png" id="212_xwtoc"]
+[ext_resource type="Texture2D" uid="uid://crg3jxt6abnke" path="res://demo/art_assets/tf2-team-fortress208.png" id="213_7dftd"]
+[ext_resource type="Texture2D" uid="uid://c45khhr1jo2f1" path="res://demo/art_assets/tf2-team-fortress209.png" id="214_e7df5"]
+[ext_resource type="Texture2D" uid="uid://b0jyycllfwimg" path="res://demo/art_assets/tf2-team-fortress210.png" id="215_eb5uv"]
+[ext_resource type="Texture2D" uid="uid://bop0s872t706n" path="res://demo/art_assets/tf2-team-fortress211.png" id="216_k7eim"]
+[ext_resource type="Texture2D" uid="uid://bb8ntkhr27nxw" path="res://demo/art_assets/tf2-team-fortress212.png" id="217_tj28r"]
+[ext_resource type="Texture2D" uid="uid://dtkw5k26cb2c8" path="res://demo/art_assets/tf2-team-fortress213.png" id="218_uy226"]
+[ext_resource type="Texture2D" uid="uid://dbru3m73xwenr" path="res://demo/art_assets/tf2-team-fortress214.png" id="219_1k4tu"]
+[ext_resource type="Texture2D" uid="uid://lkywmknlcwey" path="res://demo/art_assets/tf2-team-fortress215.png" id="220_rj1vd"]
+[ext_resource type="Texture2D" uid="uid://bnr7wjv43hsqa" path="res://demo/art_assets/tf2-team-fortress216.png" id="221_40c0c"]
+[ext_resource type="Texture2D" uid="uid://cm0dl0l13mael" path="res://demo/art_assets/tf2-team-fortress217.png" id="222_r4w4a"]
+[ext_resource type="Texture2D" uid="uid://ctjlq61o7aoai" path="res://demo/art_assets/tf2-team-fortress218.png" id="223_nxejw"]
+[ext_resource type="Texture2D" uid="uid://ioltdq4wi18x" path="res://demo/art_assets/tf2-team-fortress219.png" id="224_c657g"]
+[ext_resource type="Texture2D" uid="uid://b5medm5acva0t" path="res://demo/art_assets/tf2-team-fortress220.png" id="225_fbt56"]
+[ext_resource type="Texture2D" uid="uid://dbp3a266gfkbp" path="res://demo/art_assets/tf2-team-fortress221.png" id="226_d6mrg"]
+[ext_resource type="Texture2D" uid="uid://4vfgoqtjouvc" path="res://demo/art_assets/tf2-team-fortress222.png" id="227_yud1l"]
+[ext_resource type="Texture2D" uid="uid://dd6gvplsi4wj6" path="res://demo/art_assets/tf2-team-fortress223.png" id="228_d1pke"]
+[ext_resource type="Texture2D" uid="uid://djjnwkxtv0tgb" path="res://demo/art_assets/tf2-team-fortress224.png" id="229_jmtol"]
+[ext_resource type="Texture2D" uid="uid://d2gerwqemtv51" path="res://demo/art_assets/tf2-team-fortress225.png" id="230_wgpkn"]
+[ext_resource type="Texture2D" uid="uid://rqdqapltuhpd" path="res://demo/art_assets/tf2-team-fortress226.png" id="231_hcorq"]
+[ext_resource type="Texture2D" uid="uid://bshg6mwbuwae7" path="res://demo/art_assets/tf2-team-fortress227.png" id="232_ouqrr"]
+[ext_resource type="Texture2D" uid="uid://civncxnceheil" path="res://demo/art_assets/tf2-team-fortress228.png" id="233_smyo5"]
+[ext_resource type="Texture2D" uid="uid://digv4dc5vu5l8" path="res://demo/art_assets/tf2-team-fortress229.png" id="234_fmyjj"]
+[ext_resource type="Texture2D" uid="uid://b2fp8v6lnpc7r" path="res://demo/art_assets/tf2-team-fortress230.png" id="235_fs2rw"]
+[ext_resource type="Texture2D" uid="uid://dxksqvytd35eb" path="res://demo/art_assets/tf2-team-fortress231.png" id="236_sdo8f"]
+[ext_resource type="Texture2D" uid="uid://cdg062maxbh1k" path="res://demo/art_assets/tf2-team-fortress232.png" id="237_2fntj"]
+[ext_resource type="Texture2D" uid="uid://bis3omjau0t6t" path="res://demo/art_assets/tf2-team-fortress233.png" id="238_fe0ky"]
+[ext_resource type="Texture2D" uid="uid://djctiindgoscv" path="res://demo/art_assets/tf2-team-fortress234.png" id="239_6nf7u"]
+[ext_resource type="Texture2D" uid="uid://be7dh8jf36iv7" path="res://demo/art_assets/tf2-team-fortress235.png" id="240_f6cbq"]
+[ext_resource type="Texture2D" uid="uid://dx1bqwmf256x2" path="res://demo/art_assets/tf2-team-fortress236.png" id="241_yn2sx"]
+[ext_resource type="Texture2D" uid="uid://fvynon2hbwb2" path="res://demo/art_assets/tf2-team-fortress237.png" id="242_p83jw"]
+[ext_resource type="Texture2D" uid="uid://dcg4yccmwslw2" path="res://demo/art_assets/tf2-team-fortress238.png" id="243_1ea52"]
+[ext_resource type="Texture2D" uid="uid://btjf0knuef7h3" path="res://demo/art_assets/tf2-team-fortress239.png" id="244_op8e0"]
+[ext_resource type="Texture2D" uid="uid://v5udolefswyc" path="res://demo/art_assets/tf2-team-fortress240.png" id="245_cvdgx"]
+[ext_resource type="Texture2D" uid="uid://bydbb2pbprh2s" path="res://demo/art_assets/tf2-team-fortress241.png" id="246_plgcd"]
+[ext_resource type="Texture2D" uid="uid://bglywkq61wtln" path="res://demo/art_assets/tf2-team-fortress242.png" id="247_jfnt2"]
+[ext_resource type="Texture2D" uid="uid://ddx3c0llb2cw4" path="res://demo/art_assets/tf2-team-fortress243.png" id="248_amtjk"]
+[ext_resource type="Texture2D" uid="uid://0fdrymxtb8ct" path="res://demo/art_assets/tf2-team-fortress244.png" id="249_rfjfu"]
+[ext_resource type="Texture2D" uid="uid://c5vpsxjai0r0g" path="res://demo/art_assets/tf2-team-fortress245.png" id="250_6bc6v"]
+[ext_resource type="Texture2D" uid="uid://lyscsx74885u" path="res://demo/art_assets/tf2-team-fortress246.png" id="251_dn6bl"]
+[ext_resource type="Texture2D" uid="uid://bvh37byg2fr6a" path="res://demo/art_assets/tf2-team-fortress247.png" id="252_sdleu"]
+[ext_resource type="Texture2D" uid="uid://bbncugygxutx0" path="res://demo/art_assets/tf2-team-fortress248.png" id="253_8p566"]
+[ext_resource type="Texture2D" uid="uid://c6l5jl0x51um5" path="res://demo/art_assets/tf2-team-fortress249.png" id="254_m1t7t"]
+[ext_resource type="Texture2D" uid="uid://uxo8bvd0erk1" path="res://demo/art_assets/tf2-team-fortress250.png" id="255_rp4qk"]
+[ext_resource type="Texture2D" uid="uid://c6kx6kefwje7f" path="res://demo/art_assets/tf2-team-fortress251.png" id="256_v6f4u"]
+[ext_resource type="Texture2D" uid="uid://375mtibm5irv" path="res://demo/art_assets/tf2-team-fortress252.png" id="257_sgy83"]
+[ext_resource type="Texture2D" uid="uid://d4b0obcm61sb4" path="res://demo/art_assets/tf2-team-fortress253.png" id="258_wph1q"]
+[ext_resource type="Texture2D" uid="uid://bfukdl72cxmvy" path="res://demo/art_assets/tf2-team-fortress254.png" id="259_yknb5"]
+[ext_resource type="Texture2D" uid="uid://dhn8272fxcqem" path="res://demo/art_assets/tf2-team-fortress255.png" id="260_73oxy"]
+[ext_resource type="Texture2D" uid="uid://b482luyhygt20" path="res://demo/art_assets/tf2-team-fortress256.png" id="261_76vsq"]
+[ext_resource type="Texture2D" uid="uid://dw53y52uuwqou" path="res://demo/art_assets/tf2-team-fortress257.png" id="262_6b25s"]
+[ext_resource type="Texture2D" uid="uid://dea5xvnphv05h" path="res://demo/art_assets/tf2-team-fortress258.png" id="263_jq1wc"]
+[ext_resource type="Texture2D" uid="uid://dkyg7eno07tcf" path="res://demo/art_assets/tf2-team-fortress259.png" id="264_s0l17"]
+[ext_resource type="Texture2D" uid="uid://di754l2r7oinq" path="res://demo/art_assets/tf2-team-fortress260.png" id="265_q0w7l"]
+[ext_resource type="Texture2D" uid="uid://e2wg7r5ku08r" path="res://demo/art_assets/tf2-team-fortress261.png" id="266_p2std"]
+[ext_resource type="Texture2D" uid="uid://6oop0h2bx2id" path="res://demo/art_assets/tf2-team-fortress262.png" id="267_rbcp4"]
+[ext_resource type="Texture2D" uid="uid://bb1pbfauclvkr" path="res://demo/art_assets/tf2-team-fortress263.png" id="268_42foq"]
+[ext_resource type="Texture2D" uid="uid://4f86mgjdstw7" path="res://demo/art_assets/tf2-team-fortress264.png" id="269_7assy"]
+[ext_resource type="Texture2D" uid="uid://bxdnm1rcn4d63" path="res://demo/art_assets/tf2-team-fortress265.png" id="270_of31t"]
+[ext_resource type="Texture2D" uid="uid://bku58db1tebhf" path="res://demo/art_assets/tf2-team-fortress266.png" id="271_0j0j8"]
+[ext_resource type="Texture2D" uid="uid://deh01jw75jq65" path="res://demo/art_assets/tf2-team-fortress267.png" id="272_et8ia"]
+[ext_resource type="Texture2D" uid="uid://dukkrw1g27k3s" path="res://demo/art_assets/tf2-team-fortress268.png" id="273_uuloa"]
+[ext_resource type="Texture2D" uid="uid://cjjhwxt3t0t1y" path="res://demo/art_assets/tf2-team-fortress269.png" id="274_vp8v6"]
+[ext_resource type="Texture2D" uid="uid://c6ygxwi2vomky" path="res://demo/art_assets/tf2-team-fortress270.png" id="275_6k2ct"]
+[ext_resource type="Texture2D" uid="uid://bdc4hfmpisirx" path="res://demo/art_assets/tf2-team-fortress271.png" id="276_tcabm"]
+[ext_resource type="Texture2D" uid="uid://diugo2yralniv" path="res://demo/art_assets/tf2-team-fortress272.png" id="277_klb5m"]
+[ext_resource type="Texture2D" uid="uid://bc7ikxh7wdc5f" path="res://demo/art_assets/tf2-team-fortress273.png" id="278_8gtma"]
+[ext_resource type="Texture2D" uid="uid://chnch0x8dbv4v" path="res://demo/art_assets/tf2-team-fortress274.png" id="279_macq6"]
+[ext_resource type="Texture2D" uid="uid://chddtahonob72" path="res://demo/art_assets/tf2-team-fortress275.png" id="280_wiguq"]
+[ext_resource type="Texture2D" uid="uid://cflf78qkwp4ax" path="res://demo/art_assets/tf2-team-fortress276.png" id="281_bj0re"]
+[ext_resource type="Texture2D" uid="uid://c7jw8knkwkn6" path="res://demo/art_assets/tf2-team-fortress277.png" id="282_5xkvs"]
+[ext_resource type="Texture2D" uid="uid://cfelytmy6u0gi" path="res://demo/art_assets/tf2-team-fortress278.png" id="283_mxq5l"]
+[ext_resource type="Texture2D" uid="uid://pa024h0y1240" path="res://demo/art_assets/tf2-team-fortress279.png" id="284_5l54n"]
+[ext_resource type="Texture2D" uid="uid://65tfofcrbuoa" path="res://demo/art_assets/tf2-team-fortress280.png" id="285_w8mqi"]
+[ext_resource type="Texture2D" uid="uid://2ckk2kxpgkv7" path="res://demo/art_assets/tf2-team-fortress281.png" id="286_8kjkd"]
+[ext_resource type="Texture2D" uid="uid://cx78vs5yorcx3" path="res://demo/art_assets/tf2-team-fortress282.png" id="287_ht7rv"]
+[ext_resource type="Texture2D" uid="uid://d3y60wod0v7h7" path="res://demo/art_assets/tf2-team-fortress283.png" id="288_nleoq"]
+[ext_resource type="Texture2D" uid="uid://lmhbwkjxsn1q" path="res://demo/art_assets/tf2-team-fortress284.png" id="289_aqsdn"]
+[ext_resource type="Texture2D" uid="uid://cv14tsochx26" path="res://demo/art_assets/tf2-team-fortress285.png" id="290_cptsh"]
+[ext_resource type="Texture2D" uid="uid://btkttaqniijrv" path="res://demo/art_assets/tf2-team-fortress286.png" id="291_bc4no"]
+[ext_resource type="Texture2D" uid="uid://ci0vt2eb4m600" path="res://demo/art_assets/tf2-team-fortress287.png" id="292_p5c2m"]
+[ext_resource type="Texture2D" uid="uid://ccykqyjwmmc8t" path="res://demo/art_assets/tf2-team-fortress288.png" id="293_0klo4"]
+[ext_resource type="Texture2D" uid="uid://oixcp75i1ry8" path="res://demo/art_assets/tf2-team-fortress289.png" id="294_ia6qd"]
+[ext_resource type="Texture2D" uid="uid://byj41w332w676" path="res://demo/art_assets/tf2-team-fortress290.png" id="295_20w7e"]
+[ext_resource type="Texture2D" uid="uid://d0vjiij7mrhik" path="res://demo/art_assets/tf2-team-fortress291.png" id="296_i6eu4"]
+[ext_resource type="Texture2D" uid="uid://b6peeh3b5yeyh" path="res://demo/art_assets/tf2-team-fortress292.png" id="297_smlwe"]
+[ext_resource type="Texture2D" uid="uid://c3jq5t5nybrhm" path="res://demo/art_assets/tf2-team-fortress293.png" id="298_5f4ce"]
+[ext_resource type="Texture2D" uid="uid://d1mlon17pbixd" path="res://demo/art_assets/tf2-team-fortress294.png" id="299_3g4xn"]
+[ext_resource type="Texture2D" uid="uid://byxuukh6pmyt" path="res://demo/art_assets/tf2-team-fortress295.png" id="300_0gw08"]
+[ext_resource type="Texture2D" uid="uid://dnt77et6n2lny" path="res://demo/art_assets/tf2-team-fortress296.png" id="301_lqjkk"]
+[ext_resource type="Texture2D" uid="uid://ljd47y4sad8b" path="res://demo/art_assets/tf2-team-fortress297.png" id="302_i2fm8"]
+[ext_resource type="Texture2D" uid="uid://bij3avi624yn5" path="res://demo/art_assets/tf2-team-fortress298.png" id="303_gwffl"]
+[ext_resource type="Texture2D" uid="uid://bf5n5rm8k1dr4" path="res://demo/art_assets/tf2-team-fortress299.png" id="304_c551h"]
+[ext_resource type="Texture2D" uid="uid://b5v2a38t3yx81" path="res://demo/art_assets/tf2-team-fortress300.png" id="305_6uvu0"]
+[ext_resource type="Texture2D" uid="uid://den6rsr7er0ua" path="res://demo/art_assets/tf2-team-fortress301.png" id="306_pyqxq"]
+[ext_resource type="Texture2D" uid="uid://b2ghet8hkmh6e" path="res://demo/art_assets/tf2-team-fortress302.png" id="307_lkrw2"]
+[ext_resource type="Texture2D" uid="uid://rwogy5naysfd" path="res://demo/art_assets/tf2-team-fortress303.png" id="308_e7f5x"]
+[ext_resource type="Texture2D" uid="uid://biknkvafr73rf" path="res://demo/art_assets/tf2-team-fortress304.png" id="309_d8vjp"]
+[ext_resource type="Texture2D" uid="uid://gqhjfydxm1op" path="res://demo/art_assets/tf2-team-fortress305.png" id="310_poqj2"]
+[ext_resource type="Texture2D" uid="uid://ck7f4fk1koolr" path="res://demo/art_assets/tf2-team-fortress306.png" id="311_nbiha"]
+[ext_resource type="Texture2D" uid="uid://bg6epu0qilmhv" path="res://demo/art_assets/tf2-team-fortress307.png" id="312_ftowv"]
+[ext_resource type="Texture2D" uid="uid://ckcbudxmq8okf" path="res://demo/art_assets/tf2-team-fortress308.png" id="313_xsp7m"]
+[ext_resource type="Texture2D" uid="uid://bc3yhnmu0fldi" path="res://demo/art_assets/tf2-team-fortress309.png" id="314_7x582"]
+[ext_resource type="Texture2D" uid="uid://hrigvn4dq1yg" path="res://demo/art_assets/tf2-team-fortress310.png" id="315_41474"]
+[ext_resource type="Texture2D" uid="uid://ypcpbwi4034y" path="res://demo/art_assets/tf2-team-fortress311.png" id="316_indi1"]
+[ext_resource type="Texture2D" uid="uid://ufs5air85bg" path="res://demo/art_assets/tf2-team-fortress312.png" id="317_ybcvs"]
+[ext_resource type="Texture2D" uid="uid://cpfe3ssacxi1r" path="res://demo/art_assets/tf2-team-fortress313.png" id="318_df80r"]
+[ext_resource type="Texture2D" uid="uid://c3e03ixvexoqj" path="res://demo/art_assets/tf2-team-fortress314.png" id="319_oe6ev"]
+[ext_resource type="Texture2D" uid="uid://cdap5l7c2aw42" path="res://demo/art_assets/tf2-team-fortress315.png" id="320_o5fc6"]
+[ext_resource type="Texture2D" uid="uid://sfv1d533ihkb" path="res://demo/art_assets/tf2-team-fortress316.png" id="321_sqrdh"]
+[ext_resource type="Texture2D" uid="uid://b1lgetscm3jny" path="res://demo/art_assets/tf2-team-fortress317.png" id="322_s60dh"]
+[ext_resource type="Texture2D" uid="uid://c6vn33xdowi3i" path="res://demo/art_assets/tf2-team-fortress318.png" id="323_js5ow"]
+[ext_resource type="Texture2D" uid="uid://bfcf2t3w64q1j" path="res://demo/art_assets/tf2-team-fortress319.png" id="324_8v5it"]
+[ext_resource type="Texture2D" uid="uid://dxa5bv042ef4a" path="res://demo/art_assets/tf2-team-fortress320.png" id="325_w6pjc"]
+[ext_resource type="Texture2D" uid="uid://scp8i6avoqnd" path="res://demo/art_assets/tf2-team-fortress321.png" id="326_2d7o0"]
+[ext_resource type="Texture2D" uid="uid://dkubqe38yl662" path="res://demo/art_assets/tf2-team-fortress322.png" id="327_r25pr"]
+[ext_resource type="Texture2D" uid="uid://dxxg6mijeifs" path="res://demo/art_assets/tf2-team-fortress323.png" id="328_silri"]
+[ext_resource type="Texture2D" uid="uid://0ph2erfjn3e3" path="res://demo/art_assets/tf2-team-fortress324.png" id="329_bnuh4"]
+[ext_resource type="Texture2D" uid="uid://ly5mp7g30h0u" path="res://demo/art_assets/tf2-team-fortress325.png" id="330_f6i5j"]
+[ext_resource type="Texture2D" uid="uid://psqrkseqhekk" path="res://demo/art_assets/tf2-team-fortress326.png" id="331_sfix2"]
+[ext_resource type="Texture2D" uid="uid://dmntmni5xljop" path="res://demo/art_assets/tf2-team-fortress327.png" id="332_0q77y"]
+[ext_resource type="Texture2D" uid="uid://bfx5hkvcba57d" path="res://demo/art_assets/tf2-team-fortress328.png" id="333_iy78o"]
+[ext_resource type="Texture2D" uid="uid://dx8m78adqqcnt" path="res://demo/art_assets/tf2-team-fortress329.png" id="334_x8rs5"]
+[ext_resource type="Texture2D" uid="uid://biohroe26mtdf" path="res://demo/art_assets/tf2-team-fortress330.png" id="335_x8e3a"]
+[ext_resource type="Texture2D" uid="uid://b85lfkak7aogi" path="res://demo/art_assets/tf2-team-fortress331.png" id="336_nvy5h"]
+[ext_resource type="Texture2D" uid="uid://dn6olvww5e0lm" path="res://demo/art_assets/tf2-team-fortress332.png" id="337_efa5t"]
+[ext_resource type="Texture2D" uid="uid://ds57i6g5yh1ly" path="res://demo/art_assets/tf2-team-fortress333.png" id="338_nf0d0"]
+[ext_resource type="Texture2D" uid="uid://ba6cw3sf8gcwr" path="res://demo/art_assets/tf2-team-fortress334.png" id="339_sylb1"]
+[ext_resource type="Texture2D" uid="uid://b735i4cvnw8om" path="res://demo/art_assets/tf2-team-fortress335.png" id="340_u1p2d"]
+[ext_resource type="Texture2D" uid="uid://cebrq2ujvtvoo" path="res://demo/art_assets/tf2-team-fortress336.png" id="341_t0h5d"]
+[ext_resource type="Texture2D" uid="uid://r1sn7imdyj04" path="res://demo/art_assets/tf2-team-fortress337.png" id="342_sn2oo"]
+[ext_resource type="Texture2D" uid="uid://bemx0aknc2kto" path="res://demo/art_assets/tf2-team-fortress338.png" id="343_5c0xs"]
+[ext_resource type="Texture2D" uid="uid://8mfqnfaqmpyt" path="res://demo/art_assets/tf2-team-fortress339.png" id="344_ycgqs"]
+[ext_resource type="Texture2D" uid="uid://dwfmoctber3xe" path="res://demo/art_assets/tf2-team-fortress340.png" id="345_7gw3x"]
+[ext_resource type="Texture2D" uid="uid://v5iag8odpiqp" path="res://demo/art_assets/tf2-team-fortress341.png" id="346_yr66a"]
+[ext_resource type="Texture2D" uid="uid://oa6brdfnoigu" path="res://demo/art_assets/tf2-team-fortress342.png" id="347_wfetf"]
+[ext_resource type="Texture2D" uid="uid://c0mw0ecqoldaq" path="res://demo/art_assets/tf2-team-fortress343.png" id="348_42nyg"]
+[ext_resource type="Texture2D" uid="uid://r40ycr6u7rv0" path="res://demo/art_assets/tf2-team-fortress344.png" id="349_hwsi8"]
+[ext_resource type="Texture2D" uid="uid://cl3md3y1cku21" path="res://demo/art_assets/tf2-team-fortress345.png" id="350_4j5dg"]
+[ext_resource type="Texture2D" uid="uid://dgwvdv5vyd8ro" path="res://demo/art_assets/tf2-team-fortress346.png" id="351_mh38l"]
+[ext_resource type="Texture2D" uid="uid://ddn6c6q8urh0u" path="res://demo/art_assets/tf2-team-fortress347.png" id="352_tqey1"]
+[ext_resource type="Texture2D" uid="uid://b262nfhia5oyq" path="res://demo/art_assets/tf2-team-fortress348.png" id="353_qo0vh"]
+[ext_resource type="Texture2D" uid="uid://xju334rtmc76" path="res://demo/art_assets/tf2-team-fortress349.png" id="354_l06ke"]
+[ext_resource type="Texture2D" uid="uid://nkjelce7psmm" path="res://demo/art_assets/tf2-team-fortress350.png" id="355_y4n15"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_jc8cw"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_hcxuf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_cafxj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_qwtm3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_8t4nw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_ji1t8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_01q5a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_0g38i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_p8ytl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_loww5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_bl08i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_123es")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_lf82w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_pckpp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_mnnyp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_8wygt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_o2occ")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_a420h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_6l4ut")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_q8au1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_eafcd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_vh3cl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_n7jc6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_gp1ua")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_na6wo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_b8jpy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_xasud")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_4fomr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_qs4c0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_ncg8y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_cyutd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_wm0g3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_ghlw0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_evhsc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_7i8f4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_m3t3i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_m7kk3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_wl6ti")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_u5ijd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_j7wyt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_f4ufd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_y4r26")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_e40ut")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_5jckf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_w05s1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_ogrrn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_ldvug")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_6hhe2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_13c1l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_o31b8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_k2kih")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_0ltl3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58_uyrnn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_rtkui")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_mghs0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_avats")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_0dyrd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_8s6d6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_l0lgw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65_5n1t5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("66_dcjl7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("67_n75pg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("68_jl5dh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("69_smujc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("70_fyuin")
+}, {
+"duration": 1.0,
+"texture": ExtResource("71_ef0e4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("72_lirjh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("73_sk15y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("74_3c0ad")
+}, {
+"duration": 1.0,
+"texture": ExtResource("75_3ejvo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("76_xygds")
+}, {
+"duration": 1.0,
+"texture": ExtResource("77_q7hnl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("78_tlt2k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("79_yibjv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("80_013sh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("81_guolw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("82_2hk6k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("83_8go51")
+}, {
+"duration": 1.0,
+"texture": ExtResource("84_qtwfk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("85_th7ky")
+}, {
+"duration": 1.0,
+"texture": ExtResource("86_qios4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("87_ihjsr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("88_5fdnx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("89_jxyis")
+}, {
+"duration": 1.0,
+"texture": ExtResource("90_pny3g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("91_bejp2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("92_1v3jn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("93_kppah")
+}, {
+"duration": 1.0,
+"texture": ExtResource("94_03qcf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("95_del7f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("96_8ajqr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("97_g67xl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("98_4cpxn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("99_atdd3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("100_hrucr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("101_dflq6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("102_ly04v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("103_tqk6l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("104_abcva")
+}, {
+"duration": 1.0,
+"texture": ExtResource("105_6gfds")
+}, {
+"duration": 1.0,
+"texture": ExtResource("106_ykij6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("107_kgn7i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("108_cyvwa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("109_iuxsi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("110_b5chb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("111_a0np4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("112_abnll")
+}, {
+"duration": 1.0,
+"texture": ExtResource("113_anlbf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("114_yyu81")
+}, {
+"duration": 1.0,
+"texture": ExtResource("115_qtv64")
+}, {
+"duration": 1.0,
+"texture": ExtResource("116_q8v6s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("117_oshgv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("118_23muo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("119_daowm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("120_yoaqw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("121_vbf1j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("122_6yorf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("123_1jwao")
+}, {
+"duration": 1.0,
+"texture": ExtResource("124_j8amf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("125_hg22m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("126_x2087")
+}, {
+"duration": 1.0,
+"texture": ExtResource("127_qdumr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("128_d3r6l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("129_8q2ks")
+}, {
+"duration": 1.0,
+"texture": ExtResource("130_wdbyr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("131_1u2nf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("132_dry6b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("133_tvvvk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("134_dw62m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("135_de1lr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("136_7tgws")
+}, {
+"duration": 1.0,
+"texture": ExtResource("137_mvi67")
+}, {
+"duration": 1.0,
+"texture": ExtResource("138_id86f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("139_ux47k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("140_rtp3j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("141_kckxl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("142_o8vll")
+}, {
+"duration": 1.0,
+"texture": ExtResource("143_fobku")
+}, {
+"duration": 1.0,
+"texture": ExtResource("144_iw37n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("145_pt5cj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("146_87d5s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("147_hf0vo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("148_2x3xn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("149_o5xb1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("150_tdp1u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("151_5oa0n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("152_rqwn1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("153_eci17")
+}, {
+"duration": 1.0,
+"texture": ExtResource("154_xoqiv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("155_sfvdn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("156_mluo1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("157_cwx6p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("158_dgjfr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("159_glsib")
+}, {
+"duration": 1.0,
+"texture": ExtResource("160_y7hjy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("161_lgxr4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("162_vyxla")
+}, {
+"duration": 1.0,
+"texture": ExtResource("163_xyvhp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("164_aknam")
+}, {
+"duration": 1.0,
+"texture": ExtResource("165_1dgju")
+}, {
+"duration": 1.0,
+"texture": ExtResource("166_18ml7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("167_hgc74")
+}, {
+"duration": 1.0,
+"texture": ExtResource("168_ujoqn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("169_lg8s1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("170_340gp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("171_aldmg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("172_c6jhr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("173_a8tf0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("174_dko4g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("175_a2fqs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("176_vcpug")
+}, {
+"duration": 1.0,
+"texture": ExtResource("177_grp7x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("178_xmfit")
+}, {
+"duration": 1.0,
+"texture": ExtResource("179_nofx0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("180_lhq00")
+}, {
+"duration": 1.0,
+"texture": ExtResource("181_y3kmr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("182_oruc0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("183_8ydgu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("184_y8sjx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("185_1tdpd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("186_w53nu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("187_ni1nv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("188_ub7jp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("189_lww66")
+}, {
+"duration": 1.0,
+"texture": ExtResource("190_o0mqw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("191_0boeh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("192_a7xxg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("193_ehlhv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("194_xva8r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("195_da556")
+}, {
+"duration": 1.0,
+"texture": ExtResource("196_l71hk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("197_py1gb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("198_hnga6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("199_uowhf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("200_2hqjn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("201_lgk53")
+}, {
+"duration": 1.0,
+"texture": ExtResource("202_ht3oe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("203_vk3nx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("204_kaoxj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("205_am63u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("206_2i7lj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("207_whb5d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("208_hl73n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("209_jbulg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("210_a6dis")
+}, {
+"duration": 1.0,
+"texture": ExtResource("211_vkmpg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("212_xwtoc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("213_7dftd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("214_e7df5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("215_eb5uv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("216_k7eim")
+}, {
+"duration": 1.0,
+"texture": ExtResource("217_tj28r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("218_uy226")
+}, {
+"duration": 1.0,
+"texture": ExtResource("219_1k4tu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("220_rj1vd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("221_40c0c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("222_r4w4a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("223_nxejw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("224_c657g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("225_fbt56")
+}, {
+"duration": 1.0,
+"texture": ExtResource("226_d6mrg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("227_yud1l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("228_d1pke")
+}, {
+"duration": 1.0,
+"texture": ExtResource("229_jmtol")
+}, {
+"duration": 1.0,
+"texture": ExtResource("230_wgpkn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("231_hcorq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("232_ouqrr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("233_smyo5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("234_fmyjj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("235_fs2rw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("236_sdo8f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("237_2fntj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("238_fe0ky")
+}, {
+"duration": 1.0,
+"texture": ExtResource("239_6nf7u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("240_f6cbq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("241_yn2sx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("242_p83jw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("243_1ea52")
+}, {
+"duration": 1.0,
+"texture": ExtResource("244_op8e0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("245_cvdgx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("246_plgcd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("247_jfnt2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("248_amtjk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("249_rfjfu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("250_6bc6v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("251_dn6bl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("252_sdleu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("253_8p566")
+}, {
+"duration": 1.0,
+"texture": ExtResource("254_m1t7t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("255_rp4qk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("256_v6f4u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("257_sgy83")
+}, {
+"duration": 1.0,
+"texture": ExtResource("258_wph1q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("259_yknb5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("260_73oxy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("261_76vsq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("262_6b25s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("263_jq1wc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("264_s0l17")
+}, {
+"duration": 1.0,
+"texture": ExtResource("265_q0w7l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("266_p2std")
+}, {
+"duration": 1.0,
+"texture": ExtResource("267_rbcp4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("268_42foq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("269_7assy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("270_of31t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("271_0j0j8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("272_et8ia")
+}, {
+"duration": 1.0,
+"texture": ExtResource("273_uuloa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("274_vp8v6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("275_6k2ct")
+}, {
+"duration": 1.0,
+"texture": ExtResource("276_tcabm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("277_klb5m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("278_8gtma")
+}, {
+"duration": 1.0,
+"texture": ExtResource("279_macq6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("280_wiguq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("281_bj0re")
+}, {
+"duration": 1.0,
+"texture": ExtResource("282_5xkvs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("283_mxq5l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("284_5l54n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("285_w8mqi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("286_8kjkd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("287_ht7rv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("288_nleoq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("289_aqsdn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("290_cptsh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("291_bc4no")
+}, {
+"duration": 1.0,
+"texture": ExtResource("292_p5c2m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("293_0klo4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("294_ia6qd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("295_20w7e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("296_i6eu4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("297_smlwe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("298_5f4ce")
+}, {
+"duration": 1.0,
+"texture": ExtResource("299_3g4xn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("300_0gw08")
+}, {
+"duration": 1.0,
+"texture": ExtResource("301_lqjkk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("302_i2fm8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("303_gwffl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("304_c551h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("305_6uvu0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("306_pyqxq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("307_lkrw2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("308_e7f5x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("309_d8vjp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("310_poqj2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("311_nbiha")
+}, {
+"duration": 1.0,
+"texture": ExtResource("312_ftowv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("313_xsp7m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("314_7x582")
+}, {
+"duration": 1.0,
+"texture": ExtResource("315_41474")
+}, {
+"duration": 1.0,
+"texture": ExtResource("316_indi1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("317_ybcvs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("318_df80r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("319_oe6ev")
+}, {
+"duration": 1.0,
+"texture": ExtResource("320_o5fc6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("321_sqrdh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("322_s60dh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("323_js5ow")
+}, {
+"duration": 1.0,
+"texture": ExtResource("324_8v5it")
+}, {
+"duration": 1.0,
+"texture": ExtResource("325_w6pjc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("326_2d7o0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("327_r25pr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("328_silri")
+}, {
+"duration": 1.0,
+"texture": ExtResource("329_bnuh4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("330_f6i5j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("331_sfix2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("332_0q77y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("333_iy78o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("334_x8rs5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("335_x8e3a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("336_nvy5h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("337_efa5t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("338_nf0d0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("339_sylb1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("340_u1p2d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("341_t0h5d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("342_sn2oo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("343_5c0xs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("344_ycgqs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("345_7gw3x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("346_yr66a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("347_wfetf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("348_42nyg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("349_hwsi8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("350_4j5dg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("351_mh38l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("352_tqey1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("353_qo0vh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("354_l06ke")
+}, {
+"duration": 1.0,
+"texture": ExtResource("355_y4n15")
+}],
+"loop": true,
+"name": &"default",
+"speed": 60.0
+}]
+
+[sub_resource type="Animation" id="Animation_3q127"]
+resource_name = "shadow_change"
+length = 4.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("shadow_viewport:shadow_color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.2, 2.6, 4.1),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(0, 0, 0.835294, 0.498039), Color(1, 0, 0, 0.498039), Color(0, 1, 0, 0.498039), Color(0, 0, 1, 0.498039)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_yerne"]
+_data = {
+"shadow_change": SubResource("Animation_3q127")
+}
+
+[node name="shadows_demo" type="Node2D"]
+
+[node name="shadow_viewport" parent="." instance=ExtResource("2_4jsus")]
+autofill_distance_from_origin = true
+shadow_color = Color(0, 0.962298, 0.0314926, 0.498039)
+
+[node name="shadow_fix" parent="." instance=ExtResource("3_e8x3b")]
+visible = false
+
+[node name="background" type="TextureRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -50.0
+offset_top = -48.0
+offset_right = 1578.0
+offset_bottom = 703.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_eanlu")
+expand_mode = 1
+
+[node name="shadow_layer" parent="." instance=ExtResource("3_lnllj")]
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="movable_item7" parent="." instance=ExtResource("2_s5woq")]
+offset_left = 45.0
+offset_top = 117.0
+offset_right = 307.0
+offset_bottom = 350.0
+texture_normal = ExtResource("3_hkonc")
+
+[node name="movable_item" parent="." instance=ExtResource("2_s5woq")]
+offset_left = 346.0
+offset_top = 374.0
+offset_right = 774.0
+offset_bottom = 631.0
+texture_normal = ExtResource("3_hkonc")
+
+[node name="shadow_layer2" parent="." instance=ExtResource("3_lnllj")]
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="movable_item2" parent="." instance=ExtResource("2_s5woq")]
+offset_left = 921.0
+offset_top = 168.0
+offset_right = 1062.0
+offset_bottom = 295.0
+texture_normal = ExtResource("3_hkonc")
+
+[node name="movable_item8" parent="." instance=ExtResource("2_s5woq")]
+offset_left = 199.0
+offset_top = 67.0
+offset_right = 361.0
+offset_bottom = 213.0
+texture_normal = ExtResource("3_hkonc")
+
+[node name="movable_item4" parent="." node_paths=PackedStringArray("animated_sprite") instance=ExtResource("2_s5woq")]
+offset_left = 563.0
+offset_top = 218.0
+offset_right = 785.0
+offset_bottom = 432.0
+has_animation = true
+animated_sprite = NodePath("animated_sprite_2d")
+
+[node name="animated_sprite_2d" type="AnimatedSprite2D" parent="movable_item4"]
+scale = Vector2(2.8, 2.8)
+sprite_frames = SubResource("SpriteFrames_jc8cw")
+frame = 80
+centered = false
+
+[node name="movable_item5" parent="." node_paths=PackedStringArray("animated_sprite") instance=ExtResource("2_s5woq")]
+offset_left = 355.0
+offset_top = 214.0
+offset_right = 577.0
+offset_bottom = 428.0
+has_animation = true
+animated_sprite = NodePath("animated_sprite_2d")
+
+[node name="animated_sprite_2d" type="AnimatedSprite2D" parent="movable_item5"]
+scale = Vector2(2.8, 2.8)
+sprite_frames = SubResource("SpriteFrames_jc8cw")
+frame = 80
+centered = false
+flip_h = true
+
+[node name="shadow_layer3" parent="." instance=ExtResource("3_lnllj")]
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="movable_item6" parent="." node_paths=PackedStringArray("label") instance=ExtResource("2_s5woq")]
+offset_left = 146.0
+offset_top = 124.0
+offset_right = 523.0
+offset_bottom = 211.0
+has_label = true
+label = NodePath("label")
+
+[node name="label" type="Label" parent="movable_item6"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_font_sizes/font_size = 64
+text = "DEMO OUT!"
+
+[node name="movable_item9" parent="." instance=ExtResource("2_s5woq")]
+offset_left = 878.0
+offset_top = 153.0
+offset_right = 955.0
+offset_bottom = 220.0
+texture_normal = ExtResource("3_hkonc")
+
+[node name="shadow_layer4" parent="." instance=ExtResource("3_lnllj")]
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="movable_item3" parent="." instance=ExtResource("2_s5woq")]
+offset_left = 501.0
+offset_top = 117.0
+offset_right = 578.0
+offset_bottom = 184.0
+texture_normal = ExtResource("3_hkonc")
+
+[node name="light_source" parent="." instance=ExtResource("6_e73g7")]
+position = Vector2(578, 299)
+autosearch = true
+
+[node name="light" type="ColorRect" parent="light_source"]
+visible = false
+offset_left = -19.0
+offset_top = -19.0
+offset_right = 21.0
+offset_bottom = 21.0
+
+[node name="animation_player" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_yerne")
+}
+speed_scale = 2.0
+script = ExtResource("8_jiqvg")
+
+[connection signal="frame_changed" from="movable_item4/animated_sprite_2d" to="movable_item4" method="_on_animated_sprite_2d_frame_changed"]
+[connection signal="frame_changed" from="movable_item5/animated_sprite_2d" to="movable_item5" method="_on_animated_sprite_2d_frame_changed"]
