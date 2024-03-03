@@ -1,20 +1,20 @@
 [gd_scene load_steps=12 format=3 uid="uid://cu82x0x4ro6nn"]
 
-[ext_resource type="PackedScene" uid="uid://bxvbect8gpiyn" path="res://basic_template/shadow_viewport/shadow_viewport.tscn" id="1_n3v0u"]
-[ext_resource type="Texture2D" uid="uid://bsfmsrmbj1kiv" path="res://demo/art_assets/background.png" id="3_mb383"]
-[ext_resource type="PackedScene" uid="uid://n3mhbn005hgu" path="res://basic_template/shadow_layer/shadow_layer.tscn" id="4_1jam2"]
-[ext_resource type="Texture2D" uid="uid://cl3r4rg5ytn72" path="res://demo/art_assets/border.png" id="5_qgfog"]
-[ext_resource type="PackedScene" uid="uid://c34tmtv6gi7uy" path="res://basic_template/movable_item/movable_item.tscn" id="5_xpr4i"]
-[ext_resource type="Texture2D" uid="uid://c3pj2i7dajfgo" path="res://demo/art_assets/custom_border.png" id="6_u1fpo"]
-[ext_resource type="Texture2D" uid="uid://bife6knf5547r" path="res://demo/art_assets/center.png" id="6_uesq8"]
-[ext_resource type="Texture2D" uid="uid://cajibb848l08d" path="res://demo/art_assets/writing.png" id="6_v62tx"]
-[ext_resource type="PackedScene" uid="uid://de5ygfefe871e" path="res://basic_template/layer/layer.tscn" id="7_ysd1a"]
-[ext_resource type="Texture2D" uid="uid://d0n685kj0eaia" path="res://demo/art_assets/custom_center.png" id="9_us74o"]
-[ext_resource type="PackedScene" uid="uid://ce51o1irp4u0t" path="res://basic_template/light_source/light_source.tscn" id="356_8r7ko"]
+[ext_resource type="PackedScene" uid="uid://bxvbect8gpiyn" path="res://basic_template/shadow_viewport/shadow_viewport.tscn" id="1_68vc5"]
+[ext_resource type="Texture2D" uid="uid://bsfmsrmbj1kiv" path="res://demo/art_assets/background.png" id="2_bj63b"]
+[ext_resource type="PackedScene" uid="uid://c34tmtv6gi7uy" path="res://basic_template/movable_item/movable_item.tscn" id="3_c1d3d"]
+[ext_resource type="Texture2D" uid="uid://cajibb848l08d" path="res://demo/art_assets/writing.png" id="4_ktb7t"]
+[ext_resource type="PackedScene" uid="uid://de5ygfefe871e" path="res://basic_template/layer/layer.tscn" id="5_c3tr5"]
+[ext_resource type="Texture2D" uid="uid://c3pj2i7dajfgo" path="res://demo/art_assets/custom_border.png" id="6_tfk3c"]
+[ext_resource type="Texture2D" uid="uid://cl3r4rg5ytn72" path="res://demo/art_assets/border.png" id="7_j6chg"]
+[ext_resource type="PackedScene" uid="uid://n3mhbn005hgu" path="res://basic_template/shadow_layer/shadow_layer.tscn" id="8_fq0ih"]
+[ext_resource type="Texture2D" uid="uid://bife6knf5547r" path="res://demo/art_assets/center.png" id="9_dgk3a"]
+[ext_resource type="Texture2D" uid="uid://d0n685kj0eaia" path="res://demo/art_assets/custom_center.png" id="10_5oc7i"]
+[ext_resource type="PackedScene" uid="uid://ce51o1irp4u0t" path="res://basic_template/light_source/light_source.tscn" id="11_lpabv"]
 
-[node name="shadows_demo" type="Node2D"]
+[node name="border_overlap_fix_demo" type="Node2D"]
 
-[node name="shadow_viewport" parent="." instance=ExtResource("1_n3v0u")]
+[node name="shadow_viewport" parent="." instance=ExtResource("1_68vc5")]
 autofill_distance_from_origin = true
 shadow_color = Color(0, 0, 0, 0)
 
@@ -28,22 +28,22 @@ offset_right = 1578.0
 offset_bottom = 703.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("3_mb383")
+texture = ExtResource("2_bj63b")
 expand_mode = 1
 
-[node name="movable_item3" parent="." instance=ExtResource("5_xpr4i")]
+[node name="movable_item3" parent="." instance=ExtResource("3_c1d3d")]
 offset_left = 427.0
 offset_top = 58.0
 offset_right = 563.0
 offset_bottom = 176.0
-texture_normal = ExtResource("6_v62tx")
+texture_normal = ExtResource("4_ktb7t")
 has_shadow = false
 
-[node name="border_layer" parent="." instance=ExtResource("7_ysd1a")]
+[node name="border_layer" parent="." instance=ExtResource("5_c3tr5")]
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="movable_item5" parent="border_layer" node_paths=PackedStringArray("move_with_nodes") instance=ExtResource("5_xpr4i")]
+[node name="movable_item5" parent="border_layer" node_paths=PackedStringArray("move_with_nodes") instance=ExtResource("3_c1d3d")]
 layout_mode = 0
 offset_left = 567.0
 offset_top = 153.0
@@ -59,11 +59,11 @@ offset_left = -26.0
 offset_top = -26.0
 offset_right = 500.0
 offset_bottom = 390.0
-texture = ExtResource("6_u1fpo")
+texture = ExtResource("6_tfk3c")
 expand_mode = 1
 stretch_mode = 4
 
-[node name="movable_item6" parent="border_layer" node_paths=PackedStringArray("move_with_nodes") instance=ExtResource("5_xpr4i")]
+[node name="movable_item6" parent="border_layer" node_paths=PackedStringArray("move_with_nodes") instance=ExtResource("3_c1d3d")]
 layout_mode = 0
 offset_left = 567.0
 offset_top = 153.0
@@ -79,11 +79,11 @@ offset_left = -26.0
 offset_top = -26.0
 offset_right = 500.0
 offset_bottom = 390.0
-texture = ExtResource("6_u1fpo")
+texture = ExtResource("6_tfk3c")
 expand_mode = 1
 stretch_mode = 4
 
-[node name="movable_item1" parent="border_layer" node_paths=PackedStringArray("move_with_nodes") instance=ExtResource("5_xpr4i")]
+[node name="movable_item1" parent="border_layer" node_paths=PackedStringArray("move_with_nodes") instance=ExtResource("3_c1d3d")]
 layout_mode = 0
 offset_left = 199.0
 offset_top = 67.0
@@ -104,13 +104,13 @@ offset_right = 10.0
 offset_bottom = 10.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("5_qgfog")
+texture = ExtResource("7_j6chg")
 patch_margin_left = 10
 patch_margin_top = 10
 patch_margin_right = 10
 patch_margin_bottom = 10
 
-[node name="movable_item2" parent="border_layer" node_paths=PackedStringArray("move_with_nodes") instance=ExtResource("5_xpr4i")]
+[node name="movable_item2" parent="border_layer" node_paths=PackedStringArray("move_with_nodes") instance=ExtResource("3_c1d3d")]
 layout_mode = 0
 offset_left = 199.0
 offset_top = 67.0
@@ -131,13 +131,13 @@ offset_right = 10.0
 offset_bottom = 10.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("5_qgfog")
+texture = ExtResource("7_j6chg")
 patch_margin_left = 10
 patch_margin_top = 10
 patch_margin_right = 10
 patch_margin_bottom = 10
 
-[node name="movable_item3" parent="border_layer" node_paths=PackedStringArray("move_with_nodes") instance=ExtResource("5_xpr4i")]
+[node name="movable_item3" parent="border_layer" node_paths=PackedStringArray("move_with_nodes") instance=ExtResource("3_c1d3d")]
 layout_mode = 0
 offset_left = 199.0
 offset_top = 67.0
@@ -158,13 +158,13 @@ offset_right = 10.0
 offset_bottom = 10.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("5_qgfog")
+texture = ExtResource("7_j6chg")
 patch_margin_left = 10
 patch_margin_top = 10
 patch_margin_right = 10
 patch_margin_bottom = 10
 
-[node name="movable_item4" parent="border_layer" node_paths=PackedStringArray("move_with_nodes") instance=ExtResource("5_xpr4i")]
+[node name="movable_item4" parent="border_layer" node_paths=PackedStringArray("move_with_nodes") instance=ExtResource("3_c1d3d")]
 layout_mode = 0
 offset_left = 199.0
 offset_top = 67.0
@@ -185,21 +185,21 @@ offset_right = 10.0
 offset_bottom = 10.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("5_qgfog")
+texture = ExtResource("7_j6chg")
 patch_margin_left = 10
 patch_margin_top = 10
 patch_margin_right = 10
 patch_margin_bottom = 10
 
-[node name="shadow_layer" parent="." instance=ExtResource("4_1jam2")]
+[node name="shadow_layer" parent="." instance=ExtResource("8_fq0ih")]
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="buffer_layer" parent="." instance=ExtResource("7_ysd1a")]
+[node name="buffer_layer" parent="." instance=ExtResource("5_c3tr5")]
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="movable_item1" parent="buffer_layer" instance=ExtResource("5_xpr4i")]
+[node name="movable_item1" parent="buffer_layer" instance=ExtResource("3_c1d3d")]
 layout_mode = 0
 offset_left = 199.0
 offset_top = 67.0
@@ -207,11 +207,11 @@ offset_right = 361.0
 offset_bottom = 213.0
 mouse_filter = 2
 disabled = true
-texture_normal = ExtResource("6_uesq8")
+texture_normal = ExtResource("9_dgk3a")
 add_to_shadow_viewport = false
 remove_texture_on_set_up = true
 
-[node name="movable_item2" parent="buffer_layer" instance=ExtResource("5_xpr4i")]
+[node name="movable_item2" parent="buffer_layer" instance=ExtResource("3_c1d3d")]
 layout_mode = 0
 offset_left = 199.0
 offset_top = 67.0
@@ -219,11 +219,11 @@ offset_right = 361.0
 offset_bottom = 213.0
 mouse_filter = 2
 disabled = true
-texture_normal = ExtResource("6_uesq8")
+texture_normal = ExtResource("9_dgk3a")
 add_to_shadow_viewport = false
 remove_texture_on_set_up = true
 
-[node name="movable_item3" parent="buffer_layer" instance=ExtResource("5_xpr4i")]
+[node name="movable_item3" parent="buffer_layer" instance=ExtResource("3_c1d3d")]
 layout_mode = 0
 offset_left = 199.0
 offset_top = 67.0
@@ -231,11 +231,11 @@ offset_right = 361.0
 offset_bottom = 213.0
 mouse_filter = 2
 disabled = true
-texture_normal = ExtResource("6_uesq8")
+texture_normal = ExtResource("9_dgk3a")
 add_to_shadow_viewport = false
 remove_texture_on_set_up = true
 
-[node name="movable_item4" parent="buffer_layer" instance=ExtResource("5_xpr4i")]
+[node name="movable_item4" parent="buffer_layer" instance=ExtResource("3_c1d3d")]
 layout_mode = 0
 offset_left = 199.0
 offset_top = 67.0
@@ -243,11 +243,11 @@ offset_right = 361.0
 offset_bottom = 213.0
 mouse_filter = 2
 disabled = true
-texture_normal = ExtResource("6_uesq8")
+texture_normal = ExtResource("9_dgk3a")
 add_to_shadow_viewport = false
 remove_texture_on_set_up = true
 
-[node name="movable_item5" parent="buffer_layer" instance=ExtResource("5_xpr4i")]
+[node name="movable_item5" parent="buffer_layer" instance=ExtResource("3_c1d3d")]
 layout_mode = 0
 offset_left = 567.0
 offset_top = 153.0
@@ -255,12 +255,12 @@ offset_right = 1041.0
 offset_bottom = 517.0
 mouse_filter = 2
 disabled = true
-texture_normal = ExtResource("9_us74o")
+texture_normal = ExtResource("10_5oc7i")
 stretch_mode = 2
 add_to_shadow_viewport = false
 remove_texture_on_set_up = true
 
-[node name="movable_item6" parent="buffer_layer" instance=ExtResource("5_xpr4i")]
+[node name="movable_item6" parent="buffer_layer" instance=ExtResource("3_c1d3d")]
 layout_mode = 0
 offset_left = 567.0
 offset_top = 153.0
@@ -268,12 +268,12 @@ offset_right = 1041.0
 offset_bottom = 517.0
 mouse_filter = 2
 disabled = true
-texture_normal = ExtResource("9_us74o")
+texture_normal = ExtResource("10_5oc7i")
 stretch_mode = 2
 add_to_shadow_viewport = false
 remove_texture_on_set_up = true
 
-[node name="light_source" parent="." instance=ExtResource("356_8r7ko")]
+[node name="light_source" parent="." instance=ExtResource("11_lpabv")]
 position = Vector2(578, 299)
 distance_from_origin = 100000.0
 autosearch = true
