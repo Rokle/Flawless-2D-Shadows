@@ -3,7 +3,7 @@ extends "generic_handler.gd"
 const LAYER_PATH = "res://basic_template/layer/layer.tscn"
 
 func handle_node(node: Node, add_node_to: Node) -> void:
-	var layer = load(LAYER_PATH).instance()
+	var layer = load(LAYER_PATH).instantiate()
 	
 	layer.show_behind_parent = node.show_behind_parent
 	

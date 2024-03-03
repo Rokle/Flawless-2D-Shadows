@@ -5,10 +5,14 @@ signal shadow_changed(id,params)
 
 const TYPE_FOR_SHADOW_VIEWPORT = ShadowViewport.NODE_TYPES.MOVABLE_ITEM
 
+@export var add_to_shadow_viewport := true
+@export var remove_texture_on_set_up := false
+@export var has_shadow = true
 @export var has_animation = false
 @export var animated_sprite: AnimatedSprite2D
 @export var has_label = false
 @export var label: Label
+@export var move_with_nodes: Array[Node] = []
 
 var move_together_with_nodes = false
 
@@ -19,8 +23,6 @@ var in_shadow_viewport = false
 var linked_nodes_in_shadow_layers = []
 
 var shadow_nodes = {}
-
-var has_shadow = true
 
 var holding = false
 var hold_point = Vector2.ZERO
@@ -38,6 +40,9 @@ func set_up() -> void:
 	
 	if has_animation:
 		animated_sprite.play("default")
+
+func remove_texture() -> void:
+	texture_normal = null
 
 func update_anim(animation_holder: AnimatedSprite2D) -> void:
 	if not has_animation:
@@ -74,10 +79,16 @@ func move_rect(point: Vector2) -> void:
 	for node in linked_nodes_in_shadow_layers:
 		node.set_new_position(point)
 	
+	for node in move_with_nodes:
+		node.move_rect(point)
+	
 	update_shadow()
 
 func _input(event) -> void:
 	if in_shadow_viewport:
+		return
+	
+	if disabled:
 		return
 	
 	if InteractionsManager.holding_something and not holding:

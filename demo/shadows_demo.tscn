@@ -1,9 +1,8 @@
-[gd_scene load_steps=361 format=3 uid="uid://0srndrvmj5gr"]
+[gd_scene load_steps=360 format=3 uid="uid://0srndrvmj5gr"]
 
 [ext_resource type="Texture2D" uid="uid://bsfmsrmbj1kiv" path="res://demo/art_assets/background.png" id="1_eanlu"]
 [ext_resource type="PackedScene" uid="uid://bxvbect8gpiyn" path="res://basic_template/shadow_viewport/shadow_viewport.tscn" id="2_4jsus"]
 [ext_resource type="PackedScene" uid="uid://c34tmtv6gi7uy" path="res://basic_template/movable_item/movable_item.tscn" id="2_s5woq"]
-[ext_resource type="PackedScene" uid="uid://fq3jxur8jrco" path="res://basic_template/shadow_fix/shadow_fix.tscn" id="3_e8x3b"]
 [ext_resource type="Texture2D" uid="uid://cajibb848l08d" path="res://demo/art_assets/writing.png" id="3_hkonc"]
 [ext_resource type="PackedScene" uid="uid://n3mhbn005hgu" path="res://basic_template/shadow_layer/shadow_layer.tscn" id="3_lnllj"]
 [ext_resource type="PackedScene" uid="uid://ce51o1irp4u0t" path="res://basic_template/light_source/light_source.tscn" id="6_e73g7"]
@@ -1439,10 +1438,6 @@ _data = {
 
 [node name="shadow_viewport" parent="." instance=ExtResource("2_4jsus")]
 autofill_distance_from_origin = true
-shadow_color = Color(0, 0.962298, 0.0314926, 0.498039)
-
-[node name="shadow_fix" parent="." instance=ExtResource("3_e8x3b")]
-visible = false
 
 [node name="background" type="TextureRect" parent="."]
 anchors_preset = 15

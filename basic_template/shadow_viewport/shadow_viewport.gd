@@ -47,10 +47,11 @@ func add_cover() -> void:
 	emit_signal("viewport_created")
 
 func change_shadow_color(new_color: Color) -> void:
+	shadow_color = new_color
+	
 	if shadow_color_rect == null:
 		return
 	
-	shadow_color = new_color
 	shadow_color_rect.color = shadow_color
 
 func set_up_shadow_viewport(main_scene_node: Node) -> void:

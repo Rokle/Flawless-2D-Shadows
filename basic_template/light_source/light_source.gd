@@ -119,6 +119,9 @@ func create_shadows() -> void:
 				shadow.texture = shadow_texture
 				
 				shadow.set_up_material()
+		
+		if object_with_shadow.remove_texture_on_set_up:
+			object_with_shadow.remove_texture()
 	
 	call_deferred("force_update_shadows")
 

@@ -7,6 +7,8 @@ extends Control
 #
 # If location occupies more than one screen this node should be duplicated
 # and placed such as it or it duplicate always on scene in viewport view
+#
+# Not sure if this bug still exist in Godot v4
 
 const TYPE_FOR_SHADOW_VIEWPORT = ShadowViewport.NODE_TYPES.IGNORE
 

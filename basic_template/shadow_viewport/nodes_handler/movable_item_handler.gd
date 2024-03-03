@@ -7,6 +7,10 @@ func handle_node(node: Node, add_node_to: Node) -> void:
 		shadow_viewport.object_between_shadow_layers[-1].append(node)
 		shadow_viewport.objects_with_shadow.append(node)
 	
+	if not node.add_to_shadow_viewport:
+		nodes_handler.ignore_handler.handle_node(node,add_node_to)
+		return
+	
 	var node_duplicate = node.duplicate()
 	
 	node_duplicate.disabled = true
