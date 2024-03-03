@@ -63,6 +63,26 @@ texture = ExtResource("6_u1fpo")
 expand_mode = 1
 stretch_mode = 4
 
+[node name="movable_item6" parent="border_layer" node_paths=PackedStringArray("move_with_nodes") instance=ExtResource("5_xpr4i")]
+layout_mode = 0
+offset_left = 567.0
+offset_top = 153.0
+offset_right = 1038.0
+offset_bottom = 517.0
+add_to_shadow_viewport = false
+has_shadow = false
+move_with_nodes = [NodePath("../../buffer_layer/movable_item6")]
+
+[node name="texture_rect" type="TextureRect" parent="border_layer/movable_item6"]
+layout_mode = 0
+offset_left = -26.0
+offset_top = -26.0
+offset_right = 500.0
+offset_bottom = 390.0
+texture = ExtResource("6_u1fpo")
+expand_mode = 1
+stretch_mode = 4
+
 [node name="movable_item1" parent="border_layer" node_paths=PackedStringArray("move_with_nodes") instance=ExtResource("5_xpr4i")]
 layout_mode = 0
 offset_left = 199.0
@@ -228,6 +248,19 @@ add_to_shadow_viewport = false
 remove_texture_on_set_up = true
 
 [node name="movable_item5" parent="buffer_layer" instance=ExtResource("5_xpr4i")]
+layout_mode = 0
+offset_left = 567.0
+offset_top = 153.0
+offset_right = 1038.0
+offset_bottom = 517.0
+mouse_filter = 2
+disabled = true
+texture_normal = ExtResource("9_us74o")
+stretch_mode = 2
+add_to_shadow_viewport = false
+remove_texture_on_set_up = true
+
+[node name="movable_item6" parent="buffer_layer" instance=ExtResource("5_xpr4i")]
 layout_mode = 0
 offset_left = 567.0
 offset_top = 153.0
