@@ -251,7 +251,7 @@ remove_texture_on_set_up = true
 layout_mode = 0
 offset_left = 567.0
 offset_top = 153.0
-offset_right = 1038.0
+offset_right = 1041.0
 offset_bottom = 517.0
 mouse_filter = 2
 disabled = true
@@ -264,7 +264,7 @@ remove_texture_on_set_up = true
 layout_mode = 0
 offset_left = 567.0
 offset_top = 153.0
-offset_right = 1038.0
+offset_right = 1041.0
 offset_bottom = 517.0
 mouse_filter = 2
 disabled = true
@@ -275,7 +275,7 @@ remove_texture_on_set_up = true
 
 [node name="light_source" parent="." instance=ExtResource("356_8r7ko")]
 position = Vector2(578, 299)
-distance_from_origin = 1000.0
+distance_from_origin = 100000.0
 autosearch = true
 
 [node name="light" type="ColorRect" parent="light_source"]
